@@ -32,16 +32,18 @@
                         <div class="navbar-nav">
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                             <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link d-md-none" href="/login" data-toggle="modal" data-target="#signUpModal">Sign
+                                    Up</a>
                         </div>
                     </div>
-
+                
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary d-none d-md-inline" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Sign up for newsletter
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    <div class="modal fade" href="/login" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
