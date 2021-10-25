@@ -49,6 +49,18 @@
         {
             name: '6',
             img: '../images/6_card.png'
-        },
+        }
     ]
+
+    let grid = $('grid'); 
+
+    // Create Board
+    $.each(cardArray, function() {
+        let card = document.createElement('img')
+        let i = cardArray.index
+        card.attr({'src':'../images/blank_card.png', 'data-id':i})
+        
+    })
+    
+
  })
