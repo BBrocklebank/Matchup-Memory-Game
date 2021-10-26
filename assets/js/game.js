@@ -54,7 +54,7 @@
 
     let grid = $('.grid');
     let selectedCards = []
-    let cardsChosenID = []
+    let selectedCardsId = []
 
     // Create Board
     function createBoard() {
@@ -73,7 +73,7 @@
         let cardId = this.getAttribute('data-id')
         console.log(cardId)
         selectedCards.push(cardArray[cardId].name)
-        // selectedCardsId
+        selectedCardsId.push(cardId)
     }
 
     createBoard()
