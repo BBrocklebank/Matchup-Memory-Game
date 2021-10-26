@@ -55,13 +55,15 @@
     let grid = $('.grid'); 
 
     // Create Board
-    $.each(cardArray, function () {
-        let i = cardArray.index
+    function createBoard() {
+        for (let i = 0; i < cardArray.length; i++) {
         let card = document.createElement('img')
         $(card).attr({'src':'../Matchup-Memory-Game/assets/images/star_card.png', 'data-id':i})
         // $('.card').click(flipcard());
         $(grid).append(card);
-        console.log(card[i])
-    })
+        }
+    }
 
+    createBoard()
+    
  })
