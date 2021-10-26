@@ -1,6 +1,6 @@
  document.addEventListener('DOMContentLoaded', () => {
 
-    // Cards included in this level
+    // Cards Array
     let cardArray = [
         {
             name: '1',
@@ -71,9 +71,9 @@
     // Card Flip
     function flipcard() {
         let cardId = this.getAttribute('data-id')
-        console.log(cardId)
         selectedCards.push(cardArray[cardId].name)
         selectedCardsId.push(cardId)
+        this.setAttribute('src', cardArray[cardId].img)
     }
 
     createBoard()
