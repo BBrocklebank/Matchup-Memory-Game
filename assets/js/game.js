@@ -52,15 +52,16 @@
         }
     ]
 
-    let grid = $('grid'); 
+    let grid = $('.grid'); 
 
     // Create Board
-    $.each(cardArray, function() {
-        let card = document.createElement('img')
+    $.each(cardArray, function () {
         let i = cardArray.index
-        card.attr({'src':'../images/blank_card.png', 'data-id':i})
-        
+        let card = document.createElement('img')
+        $(card).attr({'src':'../Matchup-Memory-Game/assets/images/star_card.png', 'data-id':i})
+        // $('.card').click(flipcard());
+        $(grid).append(card);
+        console.log(card[i])
     })
-    
 
  })
