@@ -66,16 +66,23 @@
         }
     }
 
-    // Check Card Match
-
     // Card Flip
     function flipcard() {
         let cardId = this.getAttribute('data-id')
         selectedCards.push(cardArray[cardId].name)
         selectedCardsId.push(cardId)
         this.setAttribute('src', cardArray[cardId].img)
+        if (selectedCards.length === 2) {
+            checkCards()
+        }
     }
 
     createBoard()
+
+    // Check Cards
+    function checkCards () {
+        let cards = document.getElementsByTagName('img')
+        let
+    }
     
  })
