@@ -85,9 +85,14 @@
         let cards = document.getElementsByTagName('img')
         let choiceOneId = selectedCardsId[0]
         let choiceTwoId = selectedCardsId[1]
-        if (choiceOneId === choiceTwoId) {
+        if (selectedCards[0] === selectedCards[1]) {
             alert('You found a match!')
+            cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png')
+            cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png')
+            cardsMatched.push(cardsChosen)
+        } else {
             cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png')
+            cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png')
         }
     }
     
