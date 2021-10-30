@@ -94,6 +94,8 @@
             cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png')
             cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png')
         }
+        selectedCardsId = []
+        selectedCards = []
     }
     
  })
