@@ -53,8 +53,9 @@
     ]
 
     let grid = $('.grid');
-    let selectedCards = []
-    let selectedCardsId = []
+    let selectedCards = [];
+    let selectedCardsId = [];
+    let cardsMatched = [];
 
     // Create Board
     function createBoard() {
@@ -84,6 +85,10 @@
         let cards = document.getElementsByTagName('img')
         let choiceOneId = selectedCardsId[0]
         let choiceTwoId = selectedCardsId[1]
+        if (choiceOneId === choiceTwoId) {
+            alert('You found a match!')
+            cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png')
+        }
     }
     
  })
