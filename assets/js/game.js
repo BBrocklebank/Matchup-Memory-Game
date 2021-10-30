@@ -89,13 +89,13 @@
             alert('You found a match!')
             cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png')
             cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png')
-            cardsMatched.push(cardsChosen)
+            cardsMatched.push(selectedCards)
         } else {
             cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png')
             cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png')
         }
-        selectedCardsId = []
         selectedCards = []
+        selectedCardsId = []
     }
     
  })
