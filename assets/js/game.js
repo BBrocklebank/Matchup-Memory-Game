@@ -82,7 +82,8 @@
     // Check Cards
     function checkCards () {
         let cards = document.getElementsByTagName('img')
-        let
+        let choiceOneId = selectedCardsId[0]
+        let choiceTwoId = selectedCardsId[1]
     }
     
  })
