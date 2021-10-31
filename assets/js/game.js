@@ -1,4 +1,9 @@
  document.addEventListener('DOMContentLoaded', () => {
+     let startButton = document.createElement('')
+ })
+ 
+ 
+ document.addEventListener('DOMContentLoaded', () => {
 
      // Cards Array
      let cardArray = [
@@ -56,6 +61,7 @@
      let selectedCards = [];
      let selectedCardsId = [];
      let cardsMatched = [];
+     let menu = $('.menu');
 
      // Create Board
      function createBoard() {

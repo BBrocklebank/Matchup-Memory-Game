@@ -6,6 +6,14 @@
     width: 400px;
 }
 
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 400px;
+
+}
+
 /* Footer */
 .footer {
     position: absolute;
