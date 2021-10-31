@@ -1,5 +1,34 @@
+let menu = $('.menu');
+ 
  document.addEventListener('DOMContentLoaded', () => {
-     let startButton = document.createElement('')
+     let startButton = document.createElement('button');
+     let difOne = document.createElement('button');
+     let difTwo = document.createElement('button');
+     let difThree = document.createElement('button');
+
+     startButton.innerHTML = "Start";
+     difOne.innerHTML = "Difficulty Level 1";
+     difTwo.innerHTML = "Difficulty Level 2";
+     difThree.innerHTML = "Difficulty Level 3";
+
+     menuArray = [
+         startButton,
+         difOne,
+         difTwo,
+         difThree
+     ]
+
+     menuArray.forEach(item => {
+         item.setAttribute('class', 'menuButton')
+     });
+    
+
+     $(menu).append(startButton, difOne, difTwo, difThree);
+
+ })
+
+ document.addEventListener('DOMContentLoaded', () => {
+     
  })
  
  
@@ -61,7 +90,6 @@
      let selectedCards = [];
      let selectedCardsId = [];
      let cardsMatched = [];
-     let menu = $('.menu');
 
      // Create Board
      function createBoard() {
