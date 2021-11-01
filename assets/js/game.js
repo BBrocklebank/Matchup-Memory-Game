@@ -90,9 +90,13 @@ function levelOne () {
      //  Select Grid
      let grid1 = $('.grid').attr('class', 'grid1');
 
+     let scoreDisplay = $('#score');
      let selectedCards = [];
      let selectedCardsId = [];
      let cardsMatched = [];
+
+    //  Score Calculator 
+     scoreDisplay.textContent = ` ${cardsMatched.length}/${cardArray.length/2}`;
 
      // Create Board
      function createBoard() {
@@ -137,8 +141,13 @@ function levelOne () {
              cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
              cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
          }
+
          selectedCards = [];
          selectedCardsId = [];
+
+         if(cardsMatched.length === cardArray.length/2) {
+             scoreDisplay.textContent = 'Congratulations! You"ve matched them all!';
+         }
      }
 
     }
@@ -204,6 +213,9 @@ function levelOne () {
         let selectedCards = [];
         let selectedCardsId = [];
         let cardsMatched = [];
+
+         //  Score Calculator 
+         scoreDisplay.textContent = ` ${cardsMatched.length}/${cardArray.length/2}`;
    
         // Create Board
         function createBoard() {
@@ -250,7 +262,11 @@ function levelOne () {
             }
             selectedCards = [];
             selectedCardsId = [];
-            scoreDisplay.textContent = card
+            scoreDisplay.textContent = `${cardsMatched}/${cardArray.length/2}`
+
+            if(cardsMatched.length === cardArray.length/2) {
+                scoreDisplay.textContent = 'Congratulations! You"ve matched them all!';
+            }
         }
    
        }
