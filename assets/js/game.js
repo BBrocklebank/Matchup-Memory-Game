@@ -2,33 +2,33 @@ let menu = $('.menu');
  
  document.addEventListener('DOMContentLoaded', () => {
      let startButton = document.createElement('button');
-     let difOne = document.createElement('button');
-     let difTwo = document.createElement('button');
-     let difThree = document.createElement('button');
+     let levelOne = document.createElement('button');
+     let levelTwo = document.createElement('button');
+     let levelThree = document.createElement('button');
+
+    //  startButton.addEventListener('click', timer);
+     levelOne.addEventListener('click', levelOne);
+     levelTwo.addEventListener('click', levelTwo);
+     levelThree.addEventListener('click', levelThree);
 
      startButton.innerHTML = "Start";
-     difOne.innerHTML = "Difficulty Level 1";
-     difTwo.innerHTML = "Difficulty Level 2";
-     difThree.innerHTML = "Difficulty Level 3";
+     levelOne.innerHTML = "Difficulty Level 1";
+     levelTwo.innerHTML = "Difficulty Level 2";
+     levelThree.innerHTML = "Difficulty Level 3";
 
      menuArray = [
          startButton,
-         difOne,
-         difTwo,
-         difThree
+         levelOne,
+         levelTwo,
+         levelThree
      ]
 
      menuArray[0].setAttribute('class', 'btn-success btn-lg menuButtons align-top');
      menuArray[1].setAttribute('class', 'btn-warning btn-lg menuButtons');
      menuArray[2].setAttribute('class', 'btn-warning btn-lg menuButtons');
      menuArray[3].setAttribute('class', 'btn-warning btn-lg menuButtons');
-     menuArray[0].addEventListener('click', timer);
-     menuArray[1].addEventListener('click', levelOne);
-     menuArray[2].addEventListener('click', levelTwo);
-     menuArray[3].addEventListener('click', levelTwo);
      
-
-     $(menu).append(startButton, difOne, difTwo, difThree);
+     $(menu).append(startButton, levelOne, levelTwo, levelThree);
 
  })
 
