@@ -18,10 +18,10 @@ let menu = $('.menu');
          difThree
      ]
 
-     menuArray[0].setAttribute('class', 'btn-success btn-lg menuButton align-top mb-auto');
-     menuArray[1].setAttribute('class', 'btn-warning btn-lg menuButton');
-     menuArray[2].setAttribute('class', 'btn-warning btn-lg menuButton');
-     menuArray[3].setAttribute('class', 'btn-warning btn-lg menuButton');
+     menuArray[0].setAttribute('class', 'btn-success btn-lg menuButtons align-top mb-auto');
+     menuArray[1].setAttribute('class', 'btn-warning btn-lg menuButtons');
+     menuArray[2].setAttribute('class', 'btn-warning btn-lg menuButtons');
+     menuArray[3].setAttribute('class', 'btn-warning btn-lg menuButtons');
 
      $(menu).append(startButton, difOne, difTwo, difThree);
 
