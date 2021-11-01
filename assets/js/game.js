@@ -18,22 +18,22 @@ let menu = $('.menu');
          difThree
      ]
 
-     menuArray[0].setAttribute('class', 'btn-success btn-lg menuButtons align-top mb-auto');
+     menuArray[0].setAttribute('class', 'btn-success btn-lg menuButtons align-top');
      menuArray[1].setAttribute('class', 'btn-warning btn-lg menuButtons');
      menuArray[2].setAttribute('class', 'btn-warning btn-lg menuButtons');
      menuArray[3].setAttribute('class', 'btn-warning btn-lg menuButtons');
+     menuArray[0].addEventListener('click', timer);
+     menuArray[1].addEventListener('click', levelOne);
+     menuArray[2].addEventListener('click', levelTwo);
+     menuArray[3].addEventListener('click', levelTwo);
+     
 
      $(menu).append(startButton, difOne, difTwo, difThree);
 
  })
 
- document.addEventListener('DOMContentLoaded', () => {
-     
- })
+function levelOne () {
  
- 
- document.addEventListener('DOMContentLoaded', () => {
-
      // Cards Array
      let cardArray = [
          {
@@ -138,4 +138,6 @@ let menu = $('.menu');
          selectedCardsId = [];
      }
 
- })
+    }
+
+    levelOne();
