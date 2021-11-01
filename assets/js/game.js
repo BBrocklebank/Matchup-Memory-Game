@@ -7,11 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
      let levelTwo = document.createElement('button');
      let levelThree = document.createElement('button');
 
-    //  startButton.addEventListener('click', timer);
-     levelOne.addEventListener('click', levelOne);
-     levelTwo.addEventListener('click', levelTwo);
-     levelThree.addEventListener('click', levelThree);
-
      startButton.innerHTML = "Start";
      levelOne.innerHTML = "Difficulty Level 1";
      levelTwo.innerHTML = "Difficulty Level 2";
@@ -28,8 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
      menuArray[1].setAttribute('class', 'btn-warning btn-lg menuButtons');
      menuArray[2].setAttribute('class', 'btn-warning btn-lg menuButtons');
      menuArray[3].setAttribute('class', 'btn-warning btn-lg menuButtons');
+
+     //  startButton.addEventListener('click', timer); //Are names an issue? same variable and function names 
+     levelOne.addEventListener('click', levelOne);
+     levelTwo.addEventListener('click', levelTwo);
+     levelThree.addEventListener('click', levelThree);
      
      $(menu).append(startButton, levelOne, levelTwo, levelThree);
+
 
  })
 
@@ -153,8 +154,10 @@ function levelOne () {
 
     }
 
+    levelOne();
+
     function levelTwo () {
- 
+        console.log('levelTwo');
         // Cards Array
         let cardArray = [
             {
@@ -319,5 +322,3 @@ function levelOne () {
         }
    
        }
-
-    levelOne();
