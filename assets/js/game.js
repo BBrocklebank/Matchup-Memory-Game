@@ -200,6 +200,7 @@ function levelOne () {
         // Select Grid
         let grid2 = $('.grid').attr('class', 'grid2');
 
+        let scoreDisplay = $('#score');
         let selectedCards = [];
         let selectedCardsId = [];
         let cardsMatched = [];
@@ -249,6 +250,7 @@ function levelOne () {
             }
             selectedCards = [];
             selectedCardsId = [];
+            scoreDisplay.textContent = card
         }
    
        }
