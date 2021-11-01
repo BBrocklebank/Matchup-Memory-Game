@@ -204,7 +204,55 @@ function levelOne () {
             {
                 name: '6',
                 img: '../Matchup-Memory-Game/assets/images/6_card.png'
-            }
+            },
+            {
+                name: 'blue',
+                img: '../Matchup-Memory-Game/assets/images/blue_card.png'
+            },
+            {
+                name: 'blue',
+                img: '../Matchup-Memory-Game/assets/images/blue_card.png'
+            },
+            {
+                name: 'green',
+                img: '../Matchup-Memory-Game/assets/images/green_card.png'
+            },
+            {
+                name: 'green',
+                img: '../Matchup-Memory-Game/assets/images/green_card.png'
+            },
+            {
+                name: 'pink',
+                img: '../Matchup-Memory-Game/assets/images/pink_card.png'
+            },
+            {
+                name: 'pink',
+                img: '../Matchup-Memory-Game/assets/images/pink_card.png'
+            },
+            {
+                name: 'purple',
+                img: '../Matchup-Memory-Game/assets/images/purple_card.png'
+            },
+            {
+                name: 'purple',
+                img: '../Matchup-Memory-Game/assets/images/purple_card.png'
+            },
+            {
+                name: 'red',
+                img: '../Matchup-Memory-Game/assets/images/red_card.png'
+            },
+            {
+                name: 'red',
+                img: '../Matchup-Memory-Game/assets/images/red_card.png'
+            },
+            {
+                name: 'yellow',
+                img: '../Matchup-Memory-Game/assets/images/yellow_card.png'
+            },
+            {
+                name: 'yellow',
+                img: '../Matchup-Memory-Game/assets/images/yellow_card.png'
+            },
         ]
         
         // Select Grid
