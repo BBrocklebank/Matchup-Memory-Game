@@ -87,9 +87,9 @@ function levelOne () {
          }
      ]
 
-        //  Select Grid
-
+     //  Select Grid
      let grid1 = $('.grid').attr('class', 'grid1');
+
      let selectedCards = [];
      let selectedCardsId = [];
      let cardsMatched = [];
@@ -196,8 +196,10 @@ function levelOne () {
                 img: '../Matchup-Memory-Game/assets/images/6_card.png'
             }
         ]
-   
-        let grid2 = $('.grid2');
+        
+        // Select Grid
+        let grid2 = $('.grid').attr('class', 'grid2');
+
         let selectedCards = [];
         let selectedCardsId = [];
         let cardsMatched = [];
@@ -234,16 +236,16 @@ function levelOne () {
             let choiceOneId = selectedCardsId[0];
             let choiceTwoId = selectedCardsId[1];
             if (selectedCards[0] === selectedCards[1]) {
-                alert('You found a match!')
                 cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cardsMatched.push(selectedCards);
                 cards[choiceOneId].removeEventListener('click', flipcard);
                 cards[choiceTwoId].removeEventListener('click', flipcard);
+                alert('You found a match!')
             } else {
-               alert('Wrong match! Try again!')
                 cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
                 cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
+                alert('Wrong match! Try again!')
             }
             selectedCards = [];
             selectedCardsId = [];
