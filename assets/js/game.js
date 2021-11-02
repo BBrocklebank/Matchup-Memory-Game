@@ -25,16 +25,16 @@ document.addEventListener('DOMContentLoaded', () => {
      menuArray[3].setAttribute('class', 'btn-warning btn-lg menuButtons');
 
      //  startButton.addEventListener('click', timer); //Are names an issue? same variable and function names 
-     levelOne.addEventListener('click', levelOne);
-     levelTwo.addEventListener('click', levelTwo);
-     levelThree.addEventListener('click', levelThree);
+     levelOne.addEventListener('click', difOne);
+     levelTwo.addEventListener('click', difTwo);
+    //  levelThree.addEventListener('click', difThree);
      
      $(menu).append(startButton, levelOne, levelTwo, levelThree);
 
 
  })
 
-function levelOne () {
+function difOne () {
  
      // Cards Array
      let cardArray = [
@@ -154,9 +154,9 @@ function levelOne () {
 
     }
 
-    levelOne();
+    difOne();
 
-    function levelTwo () {
+    function difTwo () {
         console.log('levelTwo');
         // Cards Array
         let cardArray = [
