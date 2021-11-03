@@ -86,10 +86,13 @@ function difOne() {
         }
     ]
 
+     //  Reset Grid
+    //  .grid needs to be reset after each button press, try .replaceChild() method 
+
     //  Select Grid
     let gridContainer1 = $('.gridContainer').find('.grid');
-        gridContainer1[0].setAttribute('class', 'grid1');
-    let grid1 = $('.grid1');
+    let grid1 = gridContainer1[0];
+    $(grid1).attr('class', 'grid1');
 
     //  Score Display
     let scoreDisplay = document.getElementById('score');
@@ -259,12 +262,12 @@ function difTwo() {
 
     // Select Grid
     let gridContainer2 = $('.gridContainer').find('.grid');
-    gridContainer2[0].setAttribute('class', 'grid2');
-    let grid2 = $('.grid2');
+    let grid2 = gridContainer2[0];
+    $(grid2).attr('class', 'grid2');
 
     // Score Display
     let scoreDisplay = document.getElementById('score');
-    scoreDisplay.textContent = ` 0/${cardArray.length/2}`
+    scoreDisplay.textContent = ` 0/${cardArray.length/2}`;
 
     let selectedCards = [];
     let selectedCardsId = [];
