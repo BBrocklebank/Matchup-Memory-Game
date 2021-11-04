@@ -86,8 +86,8 @@ function difOne() {
         }
     ]
 
-     // Clear Grid
-
+    // Clear Grid
+    $('#grid').html("");
 
     //  Select Grid
     let grid1 = $('#grid');
@@ -260,6 +260,7 @@ function difTwo() {
     ]
 
     // Clear Grid
+    $('#grid').html("");
 
     // Select Grid
     let grid2 = $('#grid');
