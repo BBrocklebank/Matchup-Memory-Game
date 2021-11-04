@@ -10,6 +10,18 @@
     width: 624px;
 }
 
+.grid2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 624px;
+}
+
+.grid3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 624px;
+}
+
 /* Start Menu */
 
 .break {
