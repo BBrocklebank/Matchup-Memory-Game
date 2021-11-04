@@ -24,13 +24,6 @@
 
 /* Start Menu */
 
-.break {
-    display: block;
-    flex-wrap: nowrap;
-    height: 40px;
-    width: 100%;
-}
-
 .menuButtons {
     margin: 6px;
     border-color: black;
@@ -38,7 +31,7 @@
 
 /* Footer */
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 56px;
@@ -47,4 +40,19 @@
 
 .footer-text {
     margin-top: 16px;
+}
+
+/* Misc */
+.breakSmall {
+    display: block;
+    flex-wrap: nowrap;
+    height: 20px;
+    width: 100%;
+}
+
+.breakBig {
+    display: block;
+    flex-wrap: nowrap;
+    height: 80px;
+    width: 100%;
 }
