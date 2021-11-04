@@ -427,6 +427,54 @@ function difThree() {
             name: 'yellow',
             img: '../Matchup-Memory-Game/assets/images/yellow_card.png'
         },
+        {
+            name: 'A',
+            img: '../Matchup-Memory-Game/assets/images/a_card.png'
+        },
+        {
+            name: 'A',
+            img: '../Matchup-Memory-Game/assets/images/a_card.png'
+        },
+        {
+            name: 'B',
+            img: '../Matchup-Memory-Game/assets/images/b_card.png'
+        },
+        {
+            name: 'B',
+            img: '../Matchup-Memory-Game/assets/images/b_card.png'
+        },
+        {
+            name: 'C',
+            img: '../Matchup-Memory-Game/assets/images/c_card.png'
+        },
+        {
+            name: 'C',
+            img: '../Matchup-Memory-Game/assets/images/c_card.png'
+        },
+        {
+            name: 'D',
+            img: '../Matchup-Memory-Game/assets/images/d_card.png'
+        },
+        {
+            name: 'D',
+            img: '../Matchup-Memory-Game/assets/images/d_card.png'
+        },
+        {
+            name: 'E',
+            img: '../Matchup-Memory-Game/assets/images/e_card.png'
+        },
+        {
+            name: 'E',
+            img: '../Matchup-Memory-Game/assets/images/e_card.png'
+        },
+        {
+            name: 'F',
+            img: '../Matchup-Memory-Game/assets/images/f_card.png'
+        },
+        {
+            name: 'F',
+            img: '../Matchup-Memory-Game/assets/images/f_card.png'
+        },
     ]
 
     // Clear Grid
