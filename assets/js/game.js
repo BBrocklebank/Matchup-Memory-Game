@@ -86,12 +86,11 @@ function difOne() {
         }
     ]
 
-     //  Reset Grid
-    //  .grid needs to be reset after each button press, try .replaceChild() method 
+     // Clear Grid
+
 
     //  Select Grid
-    let gridContainer1 = $('.gridContainer').find('.grid');
-    let grid1 = gridContainer1[0];
+    let grid1 = $('#grid');
     $(grid1).attr('class', 'grid1');
 
     //  Score Display
@@ -260,9 +259,10 @@ function difTwo() {
         },
     ]
 
+    // Clear Grid
+
     // Select Grid
-    let gridContainer2 = $('.gridContainer').find('.grid');
-    let grid2 = gridContainer2[0];
+    let grid2 = $('#grid');
     $(grid2).attr('class', 'grid2');
 
     // Score Display
