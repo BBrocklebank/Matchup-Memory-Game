@@ -109,7 +109,8 @@ function difOne() {
                 'src': '../Matchup-Memory-Game/assets/images/star_card.png',
                 'data-id': i
             });
-            card.addEventListener('click', flipcard);
+            card.addEventListener('click', flipcard); 
+                                                     // Place event lisener inside a start/timer function
             $(grid1).append(card);
         }
     }
