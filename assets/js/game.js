@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     menuArray[2].setAttribute('class', 'btn-warning btn-lg menuButtons');
     menuArray[3].setAttribute('class', 'btn-warning btn-lg menuButtons');
 
-    //  startButton.addEventListener('click', timer); //Are names an issue? same variable and function names 
+    //  startButton.addEventListener('click', timer);
     levelOne.addEventListener('click', difOne);
     levelTwo.addEventListener('click', difTwo);
     levelThree.addEventListener('click', difThree);
