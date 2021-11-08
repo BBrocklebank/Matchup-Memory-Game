@@ -1,6 +1,8 @@
+// Menu Generator
 document.addEventListener('DOMContentLoaded', () => {
 
-    let menu = $('.menu');
+    let startGame = $('.startButton');
+    let levelChoice = $('.levelChoice');
 
     let startButton = document.createElement('button');
     let levelOne = document.createElement('button');
@@ -24,12 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
     menuArray[2].setAttribute('class', 'btn-warning btn-lg menuButtons');
     menuArray[3].setAttribute('class', 'btn-warning btn-lg menuButtons');
 
-    //  startButton.addEventListener('click', timer);
+    //  startButton.addEventListener('click', gameStart);
     levelOne.addEventListener('click', difOne);
     levelTwo.addEventListener('click', difTwo);
     levelThree.addEventListener('click', difThree);
 
-    $(menu).append(startButton, levelOne, levelTwo, levelThree);
+    $(levelChoice).append(levelOne, levelTwo, levelThree);
+    $(startGame).append(startButton);
 
 })
 
