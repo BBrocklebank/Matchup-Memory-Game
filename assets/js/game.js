@@ -1,8 +1,8 @@
 // Menu Generator
 document.addEventListener('DOMContentLoaded', () => {
 
-    let startGame = $('.startButton');
-    let levelChoice = $('.levelChoice');
+    let gameInitiate = $('.startButton');
+    let difficultyLevel = $('.levelChoice');
 
     let startButton = document.createElement('button');
     let levelOne = document.createElement('button');
@@ -21,18 +21,18 @@ document.addEventListener('DOMContentLoaded', () => {
         levelThree
     ]
 
-    menuArray[0].setAttribute('class', 'btn-success btn-lg menuButtons align-top');
+    menuArray[0].setAttribute('class', 'btn-success btn-lg menuButtons startGame');
     menuArray[1].setAttribute('class', 'btn-warning btn-lg menuButtons');
     menuArray[2].setAttribute('class', 'btn-warning btn-lg menuButtons');
     menuArray[3].setAttribute('class', 'btn-warning btn-lg menuButtons');
 
-    //  startButton.addEventListener('click', gameStart);
+    startButton.addEventListener('click', difOne.timerStart);
     levelOne.addEventListener('click', difOne);
     levelTwo.addEventListener('click', difTwo);
     levelThree.addEventListener('click', difThree);
 
-    $(levelChoice).append(levelOne, levelTwo, levelThree);
-    $(startGame).append(startButton);
+    $(difficultyLevel).append(levelOne, levelTwo, levelThree);
+    $(gameInitiate).append(startButton);
 
 })
 
@@ -112,8 +112,6 @@ function difOne() {
                 'src': '../Matchup-Memory-Game/assets/images/star_card.png',
                 'data-id': i
             });
-            card.addEventListener('click', flipcard); 
-                                                     // Place event lisener inside a start/timer function
             $(grid1).append(card);
         }
     }
@@ -157,6 +155,14 @@ function difOne() {
             scoreDisplay.textContent = " Congratulations! You've completed difficulty level 1!";
         }
     }
+
+    // Start Timer/Activate Cards
+    function timerStart() {
+        $('img').click(flipcard);
+        console.log('eventlistener');
+    }
+
+    difOne.timerStart = timerStart;
 
 }
 
@@ -329,6 +335,14 @@ function difTwo() {
             scoreDisplay.textContent = " Congratulations! You've completed difficulty level 2!";
         }
     }
+
+    // Start Timer/Activate Cards
+    function timerStart() {
+        $('img').click(flipcard);
+        console.log('eventlistener');
+    }
+
+    difOne.timerStart = timerStart;
 
 }
 
@@ -547,5 +561,13 @@ function difThree() {
             scoreDisplay.textContent = " Congratulations! You've completed difficulty level 3!";
         }
     }
+
+    // Start Timer/Activate Cards
+    function timerStart() {
+        $('img').click(flipcard);
+        console.log('eventlistener');
+    }
+
+    difOne.timerStart = timerStart;
 
 }
