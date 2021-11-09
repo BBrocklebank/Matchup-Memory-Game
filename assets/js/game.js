@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
     menuArray[2].setAttribute('class', 'btn-warning btn-lg menuButtons');
     menuArray[3].setAttribute('class', 'btn-warning btn-lg menuButtons');
 
-    startButton.addEventListener('click', difOne.timerStart);
     levelOne.addEventListener('click', difOne);
     levelTwo.addEventListener('click', difTwo);
     levelThree.addEventListener('click', difThree);
@@ -116,6 +115,20 @@ function difOne() {
         }
     }
 
+     // StartGame
+     $('.startGame').click(eventListeners);
+     $('.startGame').click(timer);
+
+    // Add Event Listeners To Cards
+    function eventListeners () {
+        $('img').click(flipcard);
+    }
+
+    //  Timer
+    function timer () {
+        console.log('timer');
+    }
+
     // Card Flip
     function flipcard() {
         let cardId = this.getAttribute('data-id');
@@ -156,17 +169,9 @@ function difOne() {
         }
     }
 
-    // Start Timer/Activate Cards
-    function timerStart() {
-        $('img').click(flipcard);
-        console.log('eventlistener');
-    }
-
-    difOne.timerStart = timerStart;
-
 }
 
-difOne();
+// difOne();
 
 function difTwo() {
 
@@ -292,9 +297,22 @@ function difTwo() {
                 'src': '../Matchup-Memory-Game/assets/images/star_card.png',
                 'data-id': i
             });
-            card.addEventListener('click', flipcard);
             $(grid2).append(card);
         }
+    }
+
+     // StartGame
+     $('.startGame').click(eventListeners);
+     $('.startGame').click(timer);
+
+    // Add Event Listeners To Cards
+    function eventListeners () {
+        $('img').click(flipcard);
+    }
+
+    //  Timer
+    function timer () {
+        console.log('timer');
     }
 
     // Card Flip
@@ -335,15 +353,7 @@ function difTwo() {
             scoreDisplay.textContent = " Congratulations! You've completed difficulty level 2!";
         }
     }
-
-    // Start Timer/Activate Cards
-    function timerStart() {
-        $('img').click(flipcard);
-        console.log('eventlistener');
-    }
-
-    difOne.timerStart = timerStart;
-
+   
 }
 
 function difThree() {
@@ -518,10 +528,23 @@ function difThree() {
                 'src': '../Matchup-Memory-Game/assets/images/star_card.png',
                 'data-id': i
             });
-            card.addEventListener('click', flipcard);
             $(grid3).append(card);
         }
     }
+
+    // StartGame
+    $('.startGame').click(eventListeners);
+    $('.startGame').click(timer);
+
+   // Add Event Listeners To Cards
+   function eventListeners () {
+       $('img').click(flipcard);
+   }
+
+   //  Timer
+   function timer () {
+       console.log('timer');
+   }
 
     // Card Flip
     function flipcard() {
@@ -561,13 +584,4 @@ function difThree() {
             scoreDisplay.textContent = " Congratulations! You've completed difficulty level 3!";
         }
     }
-
-    // Start Timer/Activate Cards
-    function timerStart() {
-        $('img').click(flipcard);
-        console.log('eventlistener');
-    }
-
-    difOne.timerStart = timerStart;
-
 }
