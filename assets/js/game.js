@@ -115,18 +115,37 @@ function difOne() {
         }
     }
 
+      //  Timer - Taken from robbmj - referenced in sources 
+      function startTimer(duration, display) {
+        var timer = duration, minutes, seconds;
+        setInterval(function () {
+            minutes = parseInt(timer / 60, 10)
+            seconds = parseInt(timer % 60, 10);
+    
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+    
+            display.textContent = minutes + ":" + seconds;
+    
+            if (--timer < 0) {
+                timer = duration;
+            }
+        }, 1000);
+    }
+    
+    function timerStart () {
+        var fiveMinutes = 60 * 5,
+            display = document.querySelector('#time');
+        startTimer(fiveMinutes, display);
+    };
+
      // StartGame
      $('.startGame').click(eventListeners);
-     $('.startGame').click(timer);
+     $('.startGame').click(timerStart);
 
     // Add Event Listeners To Cards
     function eventListeners () {
         $('img').click(flipcard);
-    }
-
-    //  Timer
-    function timer () {
-        console.log('timer');
     }
 
     // Card Flip
@@ -301,18 +320,37 @@ function difTwo() {
         }
     }
 
+    //  Timer - Taken from robbmj - referenced in sources 
+    function startTimer(duration, display) {
+        var timer = duration, minutes, seconds;
+        setInterval(function () {
+            minutes = parseInt(timer / 60, 10)
+            seconds = parseInt(timer % 60, 10);
+    
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+    
+            display.textContent = minutes + ":" + seconds;
+    
+            if (--timer < 0) {
+                timer = duration;
+            }
+        }, 1000);
+    }
+    
+    function timerStart () {
+        var fiveMinutes = 60 * 5,
+            display = document.querySelector('#time');
+        startTimer(fiveMinutes, display);
+    };
+
      // StartGame
      $('.startGame').click(eventListeners);
-     $('.startGame').click(timer);
+     $('.startGame').click(timerStart);
 
     // Add Event Listeners To Cards
     function eventListeners () {
         $('img').click(flipcard);
-    }
-
-    //  Timer
-    function timer () {
-        console.log('timer');
     }
 
     // Card Flip
@@ -532,18 +570,37 @@ function difThree() {
         }
     }
 
-    // StartGame
-    $('.startGame').click(eventListeners);
-    $('.startGame').click(timer);
+     //  Timer - Taken from robbmj - referenced in sources 
+     function startTimer(duration, display) {
+        var timer = duration, minutes, seconds;
+        setInterval(function () {
+            minutes = parseInt(timer / 60, 10)
+            seconds = parseInt(timer % 60, 10);
+    
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+    
+            display.textContent = minutes + ":" + seconds;
+    
+            if (--timer < 0) {
+                timer = duration;
+            }
+        }, 1000);
+    }
+    
+    function timerStart () {
+        var fiveMinutes = 60 * 5,
+            display = document.querySelector('#time');
+        startTimer(fiveMinutes, display);
+    };
+
+     // StartGame
+     $('.startGame').click(eventListeners);
+     $('.startGame').click(timerStart);
 
    // Add Event Listeners To Cards
    function eventListeners () {
        $('img').click(flipcard);
-   }
-
-   //  Timer
-   function timer () {
-       console.log('timer');
    }
 
     // Card Flip
