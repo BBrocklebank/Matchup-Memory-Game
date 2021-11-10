@@ -115,7 +115,7 @@ function difOne() {
         }
     }
 
-      //  Timer - Taken from robbmj - referenced in sources 
+      //  Timer - Taken from robbmj and modified - referenced in sources 
       function startTimer(duration, display) {
         var timer = duration, minutes, seconds;
         setInterval(function () {
@@ -128,15 +128,17 @@ function difOne() {
             display.textContent = minutes + ":" + seconds;
     
             if (--timer < 0) {
-                timer = duration;
+                display.textContent = '00:00';
             }
-        }, 1000);
+        },1000);
+        
     }
     
     function timerStart () {
-        var fiveMinutes = 60 * 5,
+        var fiveMinutes = 60 * 0.1,
             display = document.querySelector('#time');
         startTimer(fiveMinutes, display);
+        return;
     };
 
      // StartGame
@@ -188,6 +190,7 @@ function difOne() {
         }
     }
 
+    return;
 }
 
 // difOne();
@@ -320,7 +323,7 @@ function difTwo() {
         }
     }
 
-    //  Timer - Taken from robbmj - referenced in sources 
+    //  Timer - Taken from robbmj and modified - referenced in sources 
     function startTimer(duration, display) {
         var timer = duration, minutes, seconds;
         setInterval(function () {
@@ -333,13 +336,13 @@ function difTwo() {
             display.textContent = minutes + ":" + seconds;
     
             if (--timer < 0) {
-                timer = duration;
+                display.textContent = '00:00';
             }
         }, 1000);
     }
     
     function timerStart () {
-        var fiveMinutes = 60 * 5,
+        var fiveMinutes = 60 * 2,
             display = document.querySelector('#time');
         startTimer(fiveMinutes, display);
     };
@@ -570,7 +573,7 @@ function difThree() {
         }
     }
 
-     //  Timer - Taken from robbmj - referenced in sources 
+     //  Timer - Taken from robbmj and modified - referenced in sources 
      function startTimer(duration, display) {
         var timer = duration, minutes, seconds;
         setInterval(function () {
@@ -583,13 +586,13 @@ function difThree() {
             display.textContent = minutes + ":" + seconds;
     
             if (--timer < 0) {
-                timer = duration;
+                display.textContent = '00:00';
             }
         }, 1000);
     }
     
     function timerStart () {
-        var fiveMinutes = 60 * 5,
+        var fiveMinutes = 60 * 3,
             display = document.querySelector('#time');
         startTimer(fiveMinutes, display);
     };
