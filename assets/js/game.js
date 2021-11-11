@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ]
 
     menuArray[0].setAttribute('class', 'btn-success btn-lg menuButtons startGame');
-    menuArray[1].setAttribute('class', 'btn-warning btn-lg menuButtons');
+    menuArray[1].setAttribute('class', 'btn-warning btn-lg menuButtons difOne');
     menuArray[2].setAttribute('class', 'btn-warning btn-lg menuButtons');
     menuArray[3].setAttribute('class', 'btn-warning btn-lg menuButtons');
 
@@ -30,10 +30,56 @@ document.addEventListener('DOMContentLoaded', () => {
     levelTwo.addEventListener('click', difTwo);
     levelThree.addEventListener('click', difThree);
 
+    levelOne.addEventListener('click', gameKey1);
+    levelTwo.addEventListener('click', gameKey2);
+    levelThree.addEventListener('click', gameKey3);
+
     $(difficultyLevel).append(levelOne, levelTwo, levelThree);
     $(gameInitiate).append(startButton);
 
+    var option = [];
+function gameKey1() {
+    option = [];
+    option.push('L1')
+}
+function gameKey2() {
+    option = [];
+    option.push('L2')
+}
+function gameKey3() {
+    option = [];
+    option.push('L3')
+}
+
+$('.startGame').attr('id', `${option[0]}`);
+
 })
+
+//  Timer - Taken from Sandra Israel-Ovirih and modified - referenced in sources 
+let second = 0;
+let minute = 0;
+let timer = document.querySelector(".timer");
+let interval;
+
+function startTimer() {
+
+    interval = setInterval(function () {
+        timer.innerHTML = minute + " mins " + second + " secs";
+        second++;
+        if (second == 60) {
+            minute++;
+            second = 0;
+        }
+        if (minute == 60) {
+            hour++;
+            minute = 0;
+        }
+        if (minute == 2) {
+            clearInterval(interval);
+        }
+
+    }, 1000);
+}
 
 function difOne() {
 
@@ -88,6 +134,8 @@ function difOne() {
         }
     ]
 
+    clearInterval(interval);
+
     // Clear Grid
     $('#grid').html("");
 
@@ -102,7 +150,6 @@ function difOne() {
     let selectedCards = [];
     let selectedCardsId = [];
     let cardsMatched = [];
-    console.log(selectedCards);
 
     // Create Board
     function createBoard() {
@@ -116,35 +163,9 @@ function difOne() {
         }
     }
 
-     //  Timer - Taken from Sandra Israel-Ovirih and modified - referenced in sources 
-     function startTimer() {
-
-        let second = 0;
-        let minute = 0;
-        let timer = document.querySelector("#timer");
-        let interval;
-        
-        interval = setInterval(function () {
-            timer.innerHTML = minute + " mins " + second + " secs";
-            second++;
-            if (second == 60) {
-                minute++;
-                second = 0;
-            }
-            if (minute == 60) {
-                hour++;
-                minute = 0;
-            }
-            if (minute == 2) {
-                clearInterval(interval);
-            }
-
-        }, 1000);
-    }
-
-    // StartGame
-    $('.startGame').click(eventListeners);
-    $('.startGame').click(startTimer);
+    // // StartGame
+    // $('.startGame').click(eventListeners);
+    // $('.startGame').click(startTimer);
 
     // Add Event Listeners To Cards
     function eventListeners() {
@@ -197,10 +218,6 @@ function difOne() {
 // difOne();
 
 function difTwo() {
-
-    let selectedCards = [];
-    let selectedCardsId = [];
-    let cardsMatched = [];
 
     // Cards Array
     let cardArray = [{
@@ -301,6 +318,8 @@ function difTwo() {
         },
     ]
 
+    clearInterval(interval);
+
     // Clear Grid
     $('#grid').html("");
 
@@ -311,6 +330,10 @@ function difTwo() {
     // Score Display
     let scoreDisplay = document.getElementById('score');
     scoreDisplay.textContent = ` 0/${cardArray.length/2}`;
+
+    let selectedCards = [];
+    let selectedCardsId = [];
+    let cardsMatched = [];
 
     // Create Board
     function createBoard() {
@@ -324,41 +347,9 @@ function difTwo() {
         }
     }
 
-    //  Timer - Taken from Sandra Israel-Ovirih and modified - referenced in sources 
-    function startTimer() {
-
-        let second = 0;
-        let minute = 0;
-        let timer = document.querySelector("#timer");
-        let interval;
-        
-        interval = setInterval(function () {
-            timer.innerHTML = minute + " mins " + second + " secs";
-            second++;
-            if (second == 60) {
-                minute++;
-                second = 0;
-            }
-            if (minute == 60) {
-                hour++;
-                minute = 0;
-            }
-            if (minute == 3) {
-                clearInterval(interval);
-            }
-
-        }, 1000);
-    }
-
-    function timerStart() {
-        var fiveMinutes = 60 * 2,
-            display = document.querySelector('#time');
-        startTimer(fiveMinutes, display);
-    };
-
     // StartGame
     $('.startGame').click(eventListeners);
-    $('.startGame').click(timerStart);
+    $('.startGame').click(startTimer);
 
     // Add Event Listeners To Cards
     function eventListeners() {
@@ -555,6 +546,8 @@ function difThree() {
         },
     ]
 
+    clearInterval(interval);
+
     // Clear Grid
     $('#grid').html("");
 
@@ -582,41 +575,9 @@ function difThree() {
         }
     }
 
-     //  Timer - Taken from Sandra Israel-Ovirih and modified - referenced in sources 
-     function startTimer() {
-
-        let second = 0;
-        let minute = 0;
-        let timer = document.querySelector("#timer");
-        let interval;
-        
-        interval = setInterval(function () {
-            timer.innerHTML = minute + " mins " + second + " secs";
-            second++;
-            if (second == 60) {
-                minute++;
-                second = 0;
-            }
-            if (minute == 60) {
-                hour++;
-                minute = 0;
-            }
-            if (minute == 5) {
-                clearInterval(interval);
-            }
-
-        }, 1000);
-    }
-
-    function timerStart() {
-        var fiveMinutes = 60 * 3,
-            display = document.querySelector('#time');
-        startTimer(fiveMinutes, display);
-    };
-
     // StartGame
     $('.startGame').click(eventListeners);
-    $('.startGame').click(timerStart);
+    $('.startGame').click(startTimer);
 
     // Add Event Listeners To Cards
     function eventListeners() {
