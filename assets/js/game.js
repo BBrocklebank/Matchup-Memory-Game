@@ -138,7 +138,6 @@ function difOne() {
         var fiveMinutes = 60 * 0.1,
             display = document.querySelector('#time');
         startTimer(fiveMinutes, display);
-        return;
     };
 
      // StartGame
@@ -188,9 +187,8 @@ function difOne() {
         if (cardsMatched.length === cardArray.length / 2) {
             scoreDisplay.textContent = " Congratulations! You've completed difficulty level 1!";
         }
+        return;
     }
-
-    return;
 }
 
 // difOne();
