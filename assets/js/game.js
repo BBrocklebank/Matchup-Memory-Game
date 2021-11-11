@@ -102,6 +102,7 @@ function difOne() {
     let selectedCards = [];
     let selectedCardsId = [];
     let cardsMatched = [];
+    console.log(selectedCards);
 
     // Create Board
     function createBoard() {
@@ -115,37 +116,38 @@ function difOne() {
         }
     }
 
-      //  Timer - Taken from robbmj and modified - referenced in sources 
-      function startTimer(duration, display) {
-        var timer = duration, minutes, seconds;
-        setInterval(function () {
-            minutes = parseInt(timer / 60, 10)
-            seconds = parseInt(timer % 60, 10);
-    
-            minutes = minutes < 10 ? "0" + minutes : minutes;
-            seconds = seconds < 10 ? "0" + seconds : seconds;
-    
-            display.textContent = minutes + ":" + seconds;
-    
-            if (--timer < 0) {
-                display.textContent = '00:00';
-            }
-        },1000);
-        
-    }
-    
-    function timerStart () {
-        var fiveMinutes = 60 * 0.1,
-            display = document.querySelector('#time');
-        startTimer(fiveMinutes, display);
-    };
+     //  Timer - Taken from Sandra Israel-Ovirih and modified - referenced in sources 
+     function startTimer() {
 
-     // StartGame
-     $('.startGame').click(eventListeners);
-     $('.startGame').click(timerStart);
+        let second = 0;
+        let minute = 0;
+        let timer = document.querySelector("#timer");
+        let interval;
+        
+        interval = setInterval(function () {
+            timer.innerHTML = minute + " mins " + second + " secs";
+            second++;
+            if (second == 60) {
+                minute++;
+                second = 0;
+            }
+            if (minute == 60) {
+                hour++;
+                minute = 0;
+            }
+            if (minute == 2) {
+                clearInterval(interval);
+            }
+
+        }, 1000);
+    }
+
+    // StartGame
+    $('.startGame').click(eventListeners);
+    $('.startGame').click(startTimer);
 
     // Add Event Listeners To Cards
-    function eventListeners () {
+    function eventListeners() {
         $('img').click(flipcard);
     }
 
@@ -189,11 +191,16 @@ function difOne() {
         }
         return;
     }
+
 }
 
 // difOne();
 
 function difTwo() {
+
+    let selectedCards = [];
+    let selectedCardsId = [];
+    let cardsMatched = [];
 
     // Cards Array
     let cardArray = [{
@@ -305,10 +312,6 @@ function difTwo() {
     let scoreDisplay = document.getElementById('score');
     scoreDisplay.textContent = ` 0/${cardArray.length/2}`;
 
-    let selectedCards = [];
-    let selectedCardsId = [];
-    let cardsMatched = [];
-
     // Create Board
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
@@ -321,36 +324,44 @@ function difTwo() {
         }
     }
 
-    //  Timer - Taken from robbmj and modified - referenced in sources 
-    function startTimer(duration, display) {
-        var timer = duration, minutes, seconds;
-        setInterval(function () {
-            minutes = parseInt(timer / 60, 10)
-            seconds = parseInt(timer % 60, 10);
-    
-            minutes = minutes < 10 ? "0" + minutes : minutes;
-            seconds = seconds < 10 ? "0" + seconds : seconds;
-    
-            display.textContent = minutes + ":" + seconds;
-    
-            if (--timer < 0) {
-                display.textContent = '00:00';
+    //  Timer - Taken from Sandra Israel-Ovirih and modified - referenced in sources 
+    function startTimer() {
+
+        let second = 0;
+        let minute = 0;
+        let timer = document.querySelector("#timer");
+        let interval;
+        
+        interval = setInterval(function () {
+            timer.innerHTML = minute + " mins " + second + " secs";
+            second++;
+            if (second == 60) {
+                minute++;
+                second = 0;
             }
+            if (minute == 60) {
+                hour++;
+                minute = 0;
+            }
+            if (minute == 3) {
+                clearInterval(interval);
+            }
+
         }, 1000);
     }
-    
-    function timerStart () {
+
+    function timerStart() {
         var fiveMinutes = 60 * 2,
             display = document.querySelector('#time');
         startTimer(fiveMinutes, display);
     };
 
-     // StartGame
-     $('.startGame').click(eventListeners);
-     $('.startGame').click(timerStart);
+    // StartGame
+    $('.startGame').click(eventListeners);
+    $('.startGame').click(timerStart);
 
     // Add Event Listeners To Cards
-    function eventListeners () {
+    function eventListeners() {
         $('img').click(flipcard);
     }
 
@@ -392,8 +403,8 @@ function difTwo() {
             scoreDisplay.textContent = " Congratulations! You've completed difficulty level 2!";
         }
     }
-   
 }
+
 
 function difThree() {
 
@@ -571,38 +582,46 @@ function difThree() {
         }
     }
 
-     //  Timer - Taken from robbmj and modified - referenced in sources 
-     function startTimer(duration, display) {
-        var timer = duration, minutes, seconds;
-        setInterval(function () {
-            minutes = parseInt(timer / 60, 10)
-            seconds = parseInt(timer % 60, 10);
-    
-            minutes = minutes < 10 ? "0" + minutes : minutes;
-            seconds = seconds < 10 ? "0" + seconds : seconds;
-    
-            display.textContent = minutes + ":" + seconds;
-    
-            if (--timer < 0) {
-                display.textContent = '00:00';
+     //  Timer - Taken from Sandra Israel-Ovirih and modified - referenced in sources 
+     function startTimer() {
+
+        let second = 0;
+        let minute = 0;
+        let timer = document.querySelector("#timer");
+        let interval;
+        
+        interval = setInterval(function () {
+            timer.innerHTML = minute + " mins " + second + " secs";
+            second++;
+            if (second == 60) {
+                minute++;
+                second = 0;
             }
+            if (minute == 60) {
+                hour++;
+                minute = 0;
+            }
+            if (minute == 5) {
+                clearInterval(interval);
+            }
+
         }, 1000);
     }
-    
-    function timerStart () {
+
+    function timerStart() {
         var fiveMinutes = 60 * 3,
             display = document.querySelector('#time');
         startTimer(fiveMinutes, display);
     };
 
-     // StartGame
-     $('.startGame').click(eventListeners);
-     $('.startGame').click(timerStart);
+    // StartGame
+    $('.startGame').click(eventListeners);
+    $('.startGame').click(timerStart);
 
-   // Add Event Listeners To Cards
-   function eventListeners () {
-       $('img').click(flipcard);
-   }
+    // Add Event Listeners To Cards
+    function eventListeners() {
+        $('img').click(flipcard);
+    }
 
     // Card Flip
     function flipcard() {
