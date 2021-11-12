@@ -42,19 +42,16 @@ function gameKey1() {
     option = [];
     option.push('L1')
     $('.startGame').attr('id', `${option}`);
-    console.log(option);
 }
 function gameKey2() {
     option = [];
     option.push('L2')
     $('.startGame').attr('id', `${option}`);
-    console.log(option);
 }
 function gameKey3() {
     option = [];
     option.push('L3')
     $('.startGame').attr('id', `${option}`);
-    console.log(option);
 }
 
 })
@@ -172,7 +169,7 @@ function difOne() {
 
     // // StartGame
     // $('.startGame').click(eventListeners);
-    // $('.startGame').click(startTimer);
+    $('.startGame').click(startTimer);
 
     // Add Event Listeners To Cards
     function eventListeners() {
