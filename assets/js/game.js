@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
     ]
 
     menuArray[0].setAttribute('class', 'btn-success btn-lg menuButtons startGame');
-    menuArray[1].setAttribute('class', 'btn-warning btn-lg menuButtons difOne');
-    menuArray[2].setAttribute('class', 'btn-warning btn-lg menuButtons');
-    menuArray[3].setAttribute('class', 'btn-warning btn-lg menuButtons');
+    // menuArray[1].setAttribute('class', 'btn-warning btn-lg menuButtons difOne');
+    // menuArray[2].setAttribute('class', 'btn-warning btn-lg menuButtons difTwo');  class names needed?
+    // menuArray[3].setAttribute('class', 'btn-warning btn-lg menuButtons difThree');
 
     levelOne.addEventListener('click', difOne);
     levelTwo.addEventListener('click', difTwo);
@@ -37,22 +37,36 @@ document.addEventListener('DOMContentLoaded', () => {
     $(difficultyLevel).append(levelOne, levelTwo, levelThree);
     $(gameInitiate).append(startButton);
 
-    var option = [];
-function gameKey1() {
-    option = [];
-    option.push('L1')
-    $('.startGame').attr('id', `${option}`);
-}
-function gameKey2() {
-    option = [];
-    option.push('L2')
-    $('.startGame').attr('id', `${option}`);
-}
-function gameKey3() {
-    option = [];
-    option.push('L3')
-    $('.startGame').attr('id', `${option}`);
-}
+//     // Difficulty Select Key
+//     var option = [];
+// function gameKey1() {
+//     option = [];
+//     option.push('L1')
+//     $('.startGame').attr('id', `${option}`);
+//     levelOne.removeEventListener('click', difOne);
+//     levelTwo.addEventListener('click', difTwo);
+//     levelThree.addEventListener('click', difThree);
+//     console.log(option);
+// }
+// function gameKey2() {
+//     debugger
+//     option = [];
+//     option.push('L2')
+//     $('.startGame').attr('id', `${option}`);
+//     levelTwo.removeEventListener('click', difTwo);
+//     levelOne.addEventListener('click', difOne);
+//     levelThree.addEventListener('click', difThree);
+//     console.log(option);
+// }
+// function gameKey3() {
+//     option = [];
+//     option.push('L3')
+//     $('.startGame').attr('id', `${option}`);
+//     levelThree.removeEventListener('click', difThree);
+//     levelOne.addEventListener('click', difOne);
+//     levelTwo.addEventListener('click', difTwo);
+//     console.log(option);
+// }
 
 })
 
@@ -85,8 +99,9 @@ function startTimer() {
     }, 1000);
 }
 
+// Difficulty Level One
 function difOne() {
-
+console.log('difOne')
     // Cards Array
     let cardArray = [{
             name: '1',
@@ -219,10 +234,9 @@ function difOne() {
 
 }
 
-// difOne();
-
+// Difficulty Level Two
 function difTwo() {
-
+    console.log('difTwo')
     // Cards Array
     let cardArray = [{
             name: '1',
@@ -400,9 +414,9 @@ function difTwo() {
     }
 }
 
-
+// Difficulty Level Three
 function difThree() {
-
+    console.log('difThree')
     // Cards Array
     let cardArray = [{
             name: '1',
