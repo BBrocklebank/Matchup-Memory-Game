@@ -41,17 +41,21 @@ document.addEventListener('DOMContentLoaded', () => {
 function gameKey1() {
     option = [];
     option.push('L1')
+    $('.startGame').attr('id', `${option}`);
+    console.log(option);
 }
 function gameKey2() {
     option = [];
     option.push('L2')
+    $('.startGame').attr('id', `${option}`);
+    console.log(option);
 }
 function gameKey3() {
     option = [];
     option.push('L3')
+    $('.startGame').attr('id', `${option}`);
+    console.log(option);
 }
-
-$('.startGame').attr('id', `${option[0]}`);
 
 })
 
@@ -62,6 +66,9 @@ let timer = document.querySelector(".timer");
 let interval;
 
 function startTimer() {
+
+    second = 0;
+    minute = 0;
 
     interval = setInterval(function () {
         timer.innerHTML = minute + " mins " + second + " secs";
