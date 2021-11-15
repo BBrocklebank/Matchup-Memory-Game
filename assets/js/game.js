@@ -58,8 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
         $('.startGame').attr('id', `${option}`);
     }
 
-    gameKey1();
-
 })
 
 //  Timer - Taken from Sandra Israel-Ovirih and modified - referenced in sources 
@@ -89,7 +87,7 @@ function startTimer() {
                 hour++;
                 minute = 0;
             }
-            if (minute == 2) {
+            if (minute == 2 && second ==  1) {
                 clearInterval(interval);
             }
 
@@ -98,11 +96,12 @@ function startTimer() {
 }
 
 // Difficulty Level One
-control1 = [];
+let control1 = [];
 
 function difOne() {
-
     control1++;
+    control2 = [];
+    control3 = [];
 
     if (control1 > 1) {
         return;
@@ -238,16 +237,15 @@ function difOne() {
 
 }
 
-difOne();
-
 // Difficulty Level Two
-control2 = [];
-
+let control2 = [];
 function difTwo() {
 
+    control1 = [];
+    control3 = [];
     control2++;
 
-    if ((control2 > 1) || (option === 'L1' || 'L3')) {
+    if (control2 > 1) {
         console.log('dif2');
         return;
     } else {
@@ -428,10 +426,11 @@ function difTwo() {
 }
 
 // Difficulty Level Three
-control3 = [];
-
+let control3 = [];
 function difThree() {
 
+    control1 = [];
+    control2 = [];
     control3++;
 
     if (control3 > 1) {
