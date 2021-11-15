@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function gameKey3() {
         option = [];
         option.push('L3')
-        console.log(option);
         $('.startGame').attr('id', `${option}`);
     }
 
@@ -67,15 +66,14 @@ let second = 0;
 let minute = 0;
 let timer = document.querySelector(".timer");
 let interval;
-controlTime = [];
+let timeArray = [];
 
 function startTimer() {
-    controlTime++
+    timeArray++;
     second = 0;
     minute = 0;
-    console.log(controlTime);
-    if (controlTime > 1) {
-        console.log('stopTime')
+
+    if (timeArray > 1) {
         return;
     } else {
         interval = setInterval(function () {
@@ -108,6 +106,7 @@ function difOne() {
     if (control1 > 1) {
         return;
     } else {
+
         // Cards Array
         let cardArray = [{
                 name: '1',
@@ -158,6 +157,13 @@ function difOne() {
                 img: '../Matchup-Memory-Game/assets/images/6_card.png'
             }
         ]
+
+         // Reset Timer Add function triggered by start that sets interval back to 1000 
+         second = 0;
+         minute = 0;
+         setTimeout(() => {
+             clearInterval(interval);
+         }, 1000);
 
         // Clear Grid
         $('#grid').html("");
@@ -348,6 +354,13 @@ function difTwo() {
                 img: '../Matchup-Memory-Game/assets/images/yellow_card.png'
             },
         ]
+
+         // Reset Timer
+         second = 0;
+         minute = 0;
+         setTimeout(() => {
+             clearInterval(interval);
+         }, 1000);
 
         // Clear Grid
         $('#grid').html("");
@@ -583,6 +596,13 @@ function difThree() {
                 img: '../Matchup-Memory-Game/assets/images/f_card.png'
             },
         ]
+
+        // Reset Timer
+        second = 0;
+        minute = 0;
+        setTimeout(() => {
+            clearInterval(interval);
+        }, 1000);
 
         // Clear Grid
         $('#grid').html("");
