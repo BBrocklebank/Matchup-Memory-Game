@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ]
 
     menuArray[0].setAttribute('class', 'btn-success btn-lg menuButtons startGame');
-    menuArray[1].setAttribute('class', 'btn-warning btn-lg menuButtons difOne');
+    menuArray[1].setAttribute('class', 'btn-warning btn-lg menuButtons difOne difStart');
     menuArray[2].setAttribute('class', 'btn-warning btn-lg menuButtons difTwo');
     menuArray[3].setAttribute('class', 'btn-warning btn-lg menuButtons difThree');
 
@@ -55,9 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function gameKey3() {
         option = [];
         option.push('L3')
+        console.log(option);
         $('.startGame').attr('id', `${option}`);
     }
 
+    $('.difOne').trigger('click');
 })
 
 //  Timer - Taken from Sandra Israel-Ovirih and modified - referenced in sources 
@@ -246,7 +248,6 @@ function difTwo() {
     control2++;
 
     if (control2 > 1) {
-        console.log('dif2');
         return;
     } else {
         // Cards Array
@@ -659,3 +660,4 @@ function difThree() {
         }
     }
 }
+
