@@ -159,6 +159,7 @@ function difOne() {
         ]
 
          // Reset Timer Add function triggered by start that sets interval back to 1000 
+         // Reset button that clears all card arrays and resets grid 
          second = 0;
          minute = 0;
          setTimeout(() => {
