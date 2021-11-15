@@ -58,6 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
         $('.startGame').attr('id', `${option}`);
     }
 
+    gameKey1();
+
 })
 
 //  Timer - Taken from Sandra Israel-Ovirih and modified - referenced in sources 
@@ -236,6 +238,8 @@ function difOne() {
 
 }
 
+difOne();
+
 // Difficulty Level Two
 control2 = [];
 
@@ -243,7 +247,8 @@ function difTwo() {
 
     control2++;
 
-    if (control2 > 1) {
+    if ((control2 > 1) || (option === 'L1' || 'L3')) {
+        console.log('dif2');
         return;
     } else {
         // Cards Array
