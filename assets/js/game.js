@@ -113,6 +113,12 @@ function difOne() {
         return;
     } else {
 
+        let selectedCards = [];
+        let selectedCardsId = [];
+        let cardsMatched = [];
+
+        $()
+
         // Cards Array
         let cardArray = [{
                 name: '1',
@@ -164,10 +170,6 @@ function difOne() {
             }
         ]
 
-        let selectedCards = [];
-        let selectedCardsId = [];
-        let cardsMatched = [];
-
         second = 0;
         minute = 0;
         setTimeout(() => {
@@ -200,6 +202,10 @@ function difOne() {
         // StartGame
         $('.startGame').click(eventListeners);
         $('.startGame').click(startTimerCheck);
+
+        function eventListeners() {
+            $('img').click(flipcard);
+        }
 
         // Timer Check
         function startTimerCheck() {
@@ -235,14 +241,12 @@ function difOne() {
             let cards = document.getElementsByTagName('img');
             let choiceOneId = selectedCardsId[0];
             let choiceTwoId = selectedCardsId[1];
-            if (selectedCards[0] === selectedCards[1]) {
+            if ((selectedCards[0] === selectedCards[1]) && (selectedCardsId[0] !== selectedCardsId[1])) {
                 alert('You found a match!')
                 cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cardsMatched.push(selectedCards);
                 scoreDisplay.textContent = ` ${cardsMatched.length}/${cardArray.length/2}`;
-                cards[choiceOneId].removeEventListener('click', flipcard);
-                cards[choiceTwoId].removeEventListener('click', flipcard);
             } else {
                 alert('Wrong match! Try again!')
                 cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
@@ -274,6 +278,10 @@ function difTwo() {
         console.log('difTwoStop')
         return;
     } else {
+
+        let selectedCards = [];
+        let selectedCardsId = [];
+        let cardsMatched = [];
 
         // Cards Array
         let cardArray = [{
@@ -373,10 +381,6 @@ function difTwo() {
                 img: '../Matchup-Memory-Game/assets/images/yellow_card.png'
             },
         ]
-
-        let selectedCards = [];
-        let selectedCardsId = [];
-        let cardsMatched = [];
 
         // Reset Timer
         second = 0;
@@ -446,7 +450,7 @@ function difTwo() {
             let cards = document.getElementsByTagName('img');
             let choiceOneId = selectedCardsId[0];
             let choiceTwoId = selectedCardsId[1];
-            if (selectedCards[0] === selectedCards[1]) {
+            if ((selectedCards[0] === selectedCards[1]) && (selectedCardsId[0] !== selectedCardsId[1])) {
                 cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cardsMatched.push(selectedCards);
@@ -481,6 +485,10 @@ function difThree() {
     if (functionLimitThree > 1) {
         return;
     } else {
+
+        let selectedCards = [];
+        let selectedCardsId = [];
+        let cardsMatched = [];
 
         // Cards Array
         let cardArray = [{
@@ -629,10 +637,6 @@ function difThree() {
             },
         ]
 
-        let selectedCards = [];
-        let selectedCardsId = [];
-        let cardsMatched = [];
-
         // Reset Timer
         second = 0;
         minute = 0;
@@ -701,7 +705,7 @@ function difThree() {
             let cards = document.getElementsByTagName('img');
             let choiceOneId = selectedCardsId[0];
             let choiceTwoId = selectedCardsId[1];
-            if (selectedCards[0] === selectedCards[1]) {
+            if ((selectedCards[0] === selectedCards[1]) && (selectedCardsId[0] !== selectedCardsId[1])) {
                 cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cardsMatched.push(selectedCards);
