@@ -37,29 +37,33 @@ document.addEventListener('DOMContentLoaded', () => {
     $(difficultyLevel).append(levelOne, levelTwo, levelThree);
     $(gameInitiate).append(startButton);
 
-    // Difficulty Select Key
-    var option = [];
-
-    function gameKey1() {
-        option = [];
-        option.push('L1')
-        $('.startGame').attr('id', `${option}`);
-    }
-
-    function gameKey2() {
-        option = [];
-        option.push('L2')
-        $('.startGame').attr('id', `${option}`);
-    }
-
-    function gameKey3() {
-        option = [];
-        option.push('L3')
-        $('.startGame').attr('id', `${option}`);
-    }
-
     $('.difOne').trigger('click');
+
 })
+
+// Difficulty Select Key
+let option = [];
+
+function gameKey1() {
+    option = [];
+    option.push('L1')
+    //  $('.startGame').attr('id', `${option}`);
+    console.log(option);
+}
+
+function gameKey2() {
+    option = [];
+    option.push('L2')
+    //  $('.startGame').attr('id', `${option}`);
+    console.log(option);
+}
+
+function gameKey3() {
+    option = [];
+    option.push('L3')
+    //  $('.startGame').attr('id', `${option}`);
+    console.log(option);
+}
 
 //  Timer - Taken from Sandra Israel-Ovirih and modified - referenced in sources 
 let second = 0;
@@ -87,7 +91,7 @@ function startTimer() {
                 hour++;
                 minute = 0;
             }
-            if (minute == 2 && second ==  1) {
+            if (minute == 2 && second == 1) {
                 clearInterval(interval);
             }
 
@@ -96,14 +100,16 @@ function startTimer() {
 }
 
 // Difficulty Level One
-let control1 = [];
+let functionLimitOne = [];
 
 function difOne() {
-    control1++;
-    control2 = [];
-    control3 = [];
 
-    if (control1 > 1) {
+    functionLimitTwo = [];
+    functionLimitThree = [];
+    functionLimitOne++;
+
+    if (functionLimitOne > 1) {
+        console.log('difOneStop');
         return;
     } else {
 
@@ -158,13 +164,15 @@ function difOne() {
             }
         ]
 
-         // Reset Timer Add function triggered by start that sets interval back to 1000 
-         // Reset button that clears all card arrays and resets grid 
-         second = 0;
-         minute = 0;
-         setTimeout(() => {
-             clearInterval(interval);
-         }, 1000);
+        let selectedCards = [];
+        let selectedCardsId = [];
+        let cardsMatched = [];
+
+        second = 0;
+        minute = 0;
+        setTimeout(() => {
+            clearInterval(interval);
+        }, 1000);
 
         // Clear Grid
         $('#grid').html("");
@@ -176,10 +184,6 @@ function difOne() {
         //  Score Display
         let scoreDisplay = document.getElementById('score');
         scoreDisplay.textContent = ` 0/${cardArray.length/2}`
-
-        let selectedCards = [];
-        let selectedCardsId = [];
-        let cardsMatched = [];
 
         // Create Board
         function createBoard() {
@@ -193,13 +197,24 @@ function difOne() {
             }
         }
 
-        // // StartGame
+        // StartGame
         $('.startGame').click(eventListeners);
-        $('.startGame').click(startTimer);
+        $('.startGame').click(startTimerCheck);
+
+        // Timer Check
+        function startTimerCheck() {
+            if (option == 'L1') {
+                console.log('timerCheck1');
+                startTimer();
+            }
+        }
 
         // Add Event Listeners To Cards
         function eventListeners() {
-            $('img').click(flipcard);
+            if (option == 'L1') {
+                console.log('eventOne');
+                $('img').click(flipcard);
+            }
         }
 
         // Card Flip
@@ -247,16 +262,19 @@ function difOne() {
 }
 
 // Difficulty Level Two
-let control2 = [];
+let functionLimitTwo = [];
+
 function difTwo() {
 
-    control1 = [];
-    control3 = [];
-    control2++;
+    functionLimitOne = [];
+    functionLimitThree = [];
+    functionLimitTwo++;
 
-    if (control2 > 1) {
+    if (functionLimitTwo > 1) {
+        console.log('difTwoStop')
         return;
     } else {
+
         // Cards Array
         let cardArray = [{
                 name: '1',
@@ -356,12 +374,16 @@ function difTwo() {
             },
         ]
 
-         // Reset Timer
-         second = 0;
-         minute = 0;
-         setTimeout(() => {
-             clearInterval(interval);
-         }, 1000);
+        let selectedCards = [];
+        let selectedCardsId = [];
+        let cardsMatched = [];
+
+        // Reset Timer
+        second = 0;
+        minute = 0;
+        setTimeout(() => {
+            clearInterval(interval);
+        }, 1000);
 
         // Clear Grid
         $('#grid').html("");
@@ -373,10 +395,6 @@ function difTwo() {
         // Score Display
         let scoreDisplay = document.getElementById('score');
         scoreDisplay.textContent = ` 0/${cardArray.length/2}`;
-
-        let selectedCards = [];
-        let selectedCardsId = [];
-        let cardsMatched = [];
 
         // Create Board
         function createBoard() {
@@ -392,11 +410,22 @@ function difTwo() {
 
         // StartGame
         $('.startGame').click(eventListeners);
-        $('.startGame').click(startTimer);
+        $('.startGame').click(startTimerCheck);
+
+        // Timer Check
+        function startTimerCheck() {
+            if (option == 'L2') {
+                console.log('timerCheck2');
+                startTimer();
+            }
+        }
 
         // Add Event Listeners To Cards
         function eventListeners() {
-            $('img').click(flipcard);
+            if (option == 'L2') {
+                console.log('eventTwo');
+                $('img').click(flipcard);
+            }
         }
 
         // Card Flip
@@ -441,16 +470,18 @@ function difTwo() {
 }
 
 // Difficulty Level Three
-let control3 = [];
+let functionLimitThree = [];
+
 function difThree() {
 
-    control1 = [];
-    control2 = [];
-    control3++;
+    functionLimitOne = [];
+    functionLimitTwo = [];
+    functionLimitThree++;
 
-    if (control3 > 1) {
+    if (functionLimitThree > 1) {
         return;
     } else {
+
         // Cards Array
         let cardArray = [{
                 name: '1',
@@ -598,6 +629,10 @@ function difThree() {
             },
         ]
 
+        let selectedCards = [];
+        let selectedCardsId = [];
+        let cardsMatched = [];
+
         // Reset Timer
         second = 0;
         minute = 0;
@@ -616,10 +651,6 @@ function difThree() {
         let scoreDisplay = document.getElementById('score');
         scoreDisplay.textContent = ` 0/${cardArray.length/2}`;
 
-        let selectedCards = [];
-        let selectedCardsId = [];
-        let cardsMatched = [];
-
         // Create Board
         function createBoard() {
             for (let i = 0; i < cardArray.length; i++) {
@@ -634,11 +665,22 @@ function difThree() {
 
         // StartGame
         $('.startGame').click(eventListeners);
-        $('.startGame').click(startTimer);
+        $('.startGame').click(startTimerCheck);
+
+        // Timer Check
+        function startTimerCheck() {
+            if (option == 'L3') {
+                console.log('timerCheck3');
+                startTimer();
+            }
+        }
 
         // Add Event Listeners To Cards
         function eventListeners() {
-            $('img').click(flipcard);
+            if (option == 'L3') {
+                console.log('eventThree');
+                $('img').click(flipcard);
+            }
         }
 
         // Card Flip
@@ -681,4 +723,3 @@ function difThree() {
         }
     }
 }
-
