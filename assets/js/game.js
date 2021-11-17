@@ -34,11 +34,20 @@ document.addEventListener('DOMContentLoaded', () => {
     levelTwo.addEventListener('click', difTwo);
     levelThree.addEventListener('click', difThree);
 
+    $(levelOne, levelTwo, levelThree).on('click', function (e) {
+        e.preventDefault();
+        reset = true;
+    });
+
+    $(startButton).on('click', function (e) {
+        e.preventDefault();
+        reset = false;
+    });
+
     $(difficultyLevel).append(levelOne, levelTwo, levelThree);
     $(gameInitiate).append(startButton);
 
     $('.difOne').trigger('click');
-
 })
 
 // Difficulty Select Key
@@ -62,36 +71,31 @@ function gameKey3() {
 //  Timer - Taken from Sandra Israel-Ovirih and modified - referenced in sources 
 let second = 0;
 let minute = 0;
-let timer = document.querySelector(".timer");
-let interval;
-let timeArray = [];
+let timerDisplay = document.querySelector(".timer");
+let reset = true;
 
-function startTimer() {
-    timeArray++;
-    second = 0;
-    minute = 0;
+setInterval(function timer() {
 
-    if (timeArray > 1) {
+    if (reset) {
+        console.log('resetClock');
         return;
     } else {
-        interval = setInterval(function () {
-            timer.innerHTML = minute + " mins " + second + " secs";
-            second++;
-            if (second == 60) {
-                minute++;
-                second = 0;
-            }
-            if (minute == 60) {
-                hour++;
-                minute = 0;
-            }
-            if (minute == 2 && second == 1) {
-                clearInterval(interval);
-            }
-
-        }, 1000);
+        console.log('timeGo');
+        timerDisplay.innerHTML = minute + " mins " + second + " secs";
+        second++;
+        if (second == 60) {
+            minute++;
+            second = 0;
+        }
+        if (minute == 60) {
+            hour++;
+            minute = 0;
+        }
+        if (minute == 2 && second == 1) {
+            clearInterval(interval);
+        }
     }
-}
+}, 1000);
 
 // Difficulty Level One
 let functionLimitOne = [];
@@ -103,6 +107,7 @@ function difOne() {
     functionLimitOne++;
 
     if (functionLimitOne > 1) {
+        console.log('Limit1');
         return;
     } else {
 
@@ -165,9 +170,6 @@ function difOne() {
 
         second = 0;
         minute = 0;
-        setTimeout(() => {
-            clearInterval(interval);
-        }, 1000);
 
         // Clear Grid
         $('#grid').html("");
@@ -196,14 +198,6 @@ function difOne() {
 
         // StartGame
         $('.startGame').click(eventListeners);
-        $('.startGame').click(startTimerCheck);
-
-        // Timer Check
-        function startTimerCheck() {
-            if (option == 'L1') {
-                startTimer();
-            }
-        }
 
         // Add Event Listeners To Cards
         function eventListeners() {
@@ -265,6 +259,7 @@ function difTwo() {
     functionLimitTwo++;
 
     if (functionLimitTwo > 1) {
+        console.log('Limit2');
         return;
     } else {
 
@@ -374,9 +369,6 @@ function difTwo() {
         // Reset Timer
         second = 0;
         minute = 0;
-        setTimeout(() => {
-            clearInterval(interval);
-        }, 1000);
 
         // Clear Grid
         $('#grid').html("");
@@ -403,14 +395,6 @@ function difTwo() {
 
         // StartGame
         $('.startGame').click(eventListeners);
-        $('.startGame').click(startTimerCheck);
-
-        // Timer Check
-        function startTimerCheck() {
-            if (option == 'L2') {
-                startTimer();
-            }
-        }
 
         // Add Event Listeners To Cards
         function eventListeners() {
@@ -441,6 +425,8 @@ function difTwo() {
                 cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cardsMatched.push(selectedCards);
+                $(cards[choiceOneId]).off('click');
+                $(cards[choiceTwoId]).off('click');
                 scoreDisplay.textContent = ` ${cardsMatched.length}/${cardArray.length/2}`;
                 alert('You found a match!')
             } else {
@@ -468,6 +454,7 @@ function difThree() {
     functionLimitThree++;
 
     if (functionLimitThree > 1) {
+        console.log('Limit3');
         return;
     } else {
 
@@ -625,9 +612,6 @@ function difThree() {
         // Reset Timer
         second = 0;
         minute = 0;
-        setTimeout(() => {
-            clearInterval(interval);
-        }, 1000);
 
         // Clear Grid
         $('#grid').html("");
@@ -654,14 +638,6 @@ function difThree() {
 
         // StartGame
         $('.startGame').click(eventListeners);
-        $('.startGame').click(startTimerCheck);
-
-        // Timer Check
-        function startTimerCheck() {
-            if (option == 'L3') {
-                startTimer();
-            }
-        }
 
         // Add Event Listeners To Cards
         function eventListeners() {
@@ -692,6 +668,8 @@ function difThree() {
                 cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cardsMatched.push(selectedCards);
+                $(cards[choiceOneId]).off('click');
+                $(cards[choiceTwoId]).off('click');
                 scoreDisplay.textContent = ` ${cardsMatched.length}/${cardArray.length/2}`;
                 alert('You found a match!')
             } else {
