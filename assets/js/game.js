@@ -115,8 +115,6 @@ function difOne() {
         let selectedCardsId = [];
         let cardsMatched = [];
 
-        $()
-
         // Cards Array
         let cardArray = [{
                 name: '1',
@@ -167,9 +165,6 @@ function difOne() {
                 img: '../Matchup-Memory-Game/assets/images/6_card.png'
             }
         ]
-
-        second = 0;
-        minute = 0;
 
         // Clear Grid
         $('#grid').html("");
@@ -365,10 +360,6 @@ function difTwo() {
                 img: '../Matchup-Memory-Game/assets/images/yellow_card.png'
             },
         ]
-
-        // Reset Timer
-        second = 0;
-        minute = 0;
 
         // Clear Grid
         $('#grid').html("");
@@ -608,10 +599,6 @@ function difThree() {
                 img: '../Matchup-Memory-Game/assets/images/f_card.png'
             },
         ]
-
-        // Reset Timer
-        second = 0;
-        minute = 0;
 
         // Clear Grid
         $('#grid').html("");
