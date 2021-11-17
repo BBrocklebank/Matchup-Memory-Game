@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let levelThree = document.createElement('button');
 
     startButton.innerHTML = "Start";
-    resetButton.innerHTML = 'Reset Timer'
+    resetButton.innerHTML = 'Reset Game'
     levelOne.innerHTML = "Difficulty Level 1";
     levelTwo.innerHTML = "Difficulty Level 2";
     levelThree.innerHTML = "Difficulty Level 3";
@@ -64,6 +64,21 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             reset = true
         }, 1000);
+
+        if(option == 'L1') {
+            functionLimitOne = [];
+            difOne();
+            functionLimitOne++
+        } else if(option == 'L2') {
+            functionLimitTwo = [];
+            difTwo();
+            functionLimitTwo++
+        } else if(option == 'L3') {
+            functionLimitThree = [];
+            difThree();
+            functionLimitThree++
+        }
+
     });
 
     difOne();
@@ -221,7 +236,6 @@ function difOne() {
 
         // Card Flip
         function flipcard() {
-            console.log('flip');
             let cardId = this.getAttribute('data-id');
             selectedCards.push(cardArray[cardId].name);
             selectedCardsId.push(cardId);
