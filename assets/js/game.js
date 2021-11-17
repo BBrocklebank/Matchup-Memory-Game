@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     let gameInitiate = $('.startButton');
+    let resetTime = $('.resetButton');
     let difficultyLevel = $('.levelChoice');
 
     let startButton = document.createElement('button');
@@ -38,20 +39,21 @@ document.addEventListener('DOMContentLoaded', () => {
     levelTwo.addEventListener('click', difTwo);
     levelThree.addEventListener('click', difThree);
 
-
-
     $(difficultyLevel).append(levelOne, levelTwo, levelThree);
     $(gameInitiate).append(startButton);
+    $(resetTime).append(resetButton);
 
-    $('.difOne, .difTwo, .difThree').on('click', function (e) {
+    $('.difOne, .difTwo, .difThree').click(function pauseTimer (e) {
         e.preventDefault();
         reset = true;
     });
     
-    $(startButton).on('click', function (a) {
+    $(startButton).click(function playTimer (a) {
         a.preventDefault();
         reset = false;
     });
+
+    difOne();
 
 })
 
@@ -82,10 +84,8 @@ let reset = true;
 setInterval(function timer() {
 
     if (reset) {
-        console.log('resetClock');
         return;
     } else {
-        console.log('timeGo');
         timerDisplay.innerHTML = minute + " mins " + second + " secs";
         second++;
         if (second == 60) {
@@ -96,8 +96,8 @@ setInterval(function timer() {
             hour++;
             minute = 0;
         }
-        if (minute == 2 && second == 1) {
-            clearInterval(interval);
+        if (minute == 1 && second == 1) {
+            reset = true;
         }
     }
 }, 1000);
@@ -112,7 +112,6 @@ function difOne() {
     functionLimitOne++;
 
     if (functionLimitOne > 1) {
-        console.log('Limit1');
         return;
     } else {
 
@@ -180,7 +179,7 @@ function difOne() {
 
         //  Score Display
         let scoreDisplay = document.getElementById('score');
-        scoreDisplay.textContent = ` 0/${cardArray.length/2}`
+        scoreDisplay.textContent = ` 0/${cardArray.length/2}`;
 
         // Create Board
         function createBoard() {
@@ -196,9 +195,6 @@ function difOne() {
 
         createBoard()
 
-        // StartGame
-        $('.startGame').click(eventListeners);
-
         // Add Event Listeners To Cards
         function eventListeners() {
             if (option == 'L1') {
@@ -206,8 +202,12 @@ function difOne() {
             }
         }
 
+         // StartGame
+         $('.startGame').click(eventListeners);
+
         // Card Flip
         function flipcard() {
+            console.log('flip');
             let cardId = this.getAttribute('data-id');
             selectedCards.push(cardArray[cardId].name);
             selectedCardsId.push(cardId);
@@ -228,8 +228,8 @@ function difOne() {
                 cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cardsMatched.push(selectedCards);
-                $(cards[choiceOneId]).off('click');
-                $(cards[choiceTwoId]).off('click');
+                $(cards[choiceOneId]).off('click', flipcard);
+                $(cards[choiceTwoId]).off('click', flipcard);
                 scoreDisplay.textContent = ` ${cardsMatched.length}/${cardArray.length/2}`;
             } else {
                 alert('Wrong match! Try again!')
@@ -259,7 +259,6 @@ function difTwo() {
     functionLimitTwo++;
 
     if (functionLimitTwo > 1) {
-        console.log('Limit2');
         return;
     } else {
 
@@ -389,15 +388,15 @@ function difTwo() {
             }
         }
 
-        // StartGame
-        $('.startGame').click(eventListeners);
-
         // Add Event Listeners To Cards
         function eventListeners() {
             if (option == 'L2') {
                 $('img').click(flipcard);
             }
         }
+
+         // StartGame
+         $('.startGame').click(eventListeners);
 
         // Card Flip
         function flipcard() {
@@ -450,7 +449,6 @@ function difThree() {
     functionLimitThree++;
 
     if (functionLimitThree > 1) {
-        console.log('Limit3');
         return;
     } else {
 
@@ -628,15 +626,15 @@ function difThree() {
             }
         }
 
-        // StartGame
-        $('.startGame').click(eventListeners);
-
         // Add Event Listeners To Cards
         function eventListeners() {
             if (option == 'L3') {
                 $('img').click(flipcard);
             }
         }
+
+        // StartGame
+        $('.startGame').click(eventListeners);
 
         // Card Flip
         function flipcard() {
@@ -678,8 +676,3 @@ function difThree() {
         }
     }
 }
-
-setTimeout(() => {
-    $(difOne).trigger('click');
-    console.log('L1Load')
-}, 100);
