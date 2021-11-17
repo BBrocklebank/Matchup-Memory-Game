@@ -47,22 +47,16 @@ let option = [];
 function gameKey1() {
     option = [];
     option.push('L1')
-    //  $('.startGame').attr('id', `${option}`);
-    console.log(option);
 }
 
 function gameKey2() {
     option = [];
     option.push('L2')
-    //  $('.startGame').attr('id', `${option}`);
-    console.log(option);
 }
 
 function gameKey3() {
     option = [];
     option.push('L3')
-    //  $('.startGame').attr('id', `${option}`);
-    console.log(option);
 }
 
 //  Timer - Taken from Sandra Israel-Ovirih and modified - referenced in sources 
@@ -109,7 +103,6 @@ function difOne() {
     functionLimitOne++;
 
     if (functionLimitOne > 1) {
-        console.log('difOneStop');
         return;
     } else {
 
@@ -199,18 +192,15 @@ function difOne() {
             }
         }
 
+        createBoard()
+
         // StartGame
         $('.startGame').click(eventListeners);
         $('.startGame').click(startTimerCheck);
 
-        function eventListeners() {
-            $('img').click(flipcard);
-        }
-
         // Timer Check
         function startTimerCheck() {
             if (option == 'L1') {
-                console.log('timerCheck1');
                 startTimer();
             }
         }
@@ -218,7 +208,6 @@ function difOne() {
         // Add Event Listeners To Cards
         function eventListeners() {
             if (option == 'L1') {
-                console.log('eventOne');
                 $('img').click(flipcard);
             }
         }
@@ -234,10 +223,9 @@ function difOne() {
             }
         }
 
-        createBoard()
-
         // Check Cards
         function checkCards() {
+
             let cards = document.getElementsByTagName('img');
             let choiceOneId = selectedCardsId[0];
             let choiceTwoId = selectedCardsId[1];
@@ -246,6 +234,8 @@ function difOne() {
                 cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cardsMatched.push(selectedCards);
+                $(cards[choiceOneId]).off('click');
+                $(cards[choiceTwoId]).off('click');
                 scoreDisplay.textContent = ` ${cardsMatched.length}/${cardArray.length/2}`;
             } else {
                 alert('Wrong match! Try again!')
@@ -275,7 +265,6 @@ function difTwo() {
     functionLimitTwo++;
 
     if (functionLimitTwo > 1) {
-        console.log('difTwoStop')
         return;
     } else {
 
@@ -419,7 +408,6 @@ function difTwo() {
         // Timer Check
         function startTimerCheck() {
             if (option == 'L2') {
-                console.log('timerCheck2');
                 startTimer();
             }
         }
@@ -427,7 +415,6 @@ function difTwo() {
         // Add Event Listeners To Cards
         function eventListeners() {
             if (option == 'L2') {
-                console.log('eventTwo');
                 $('img').click(flipcard);
             }
         }
@@ -455,8 +442,6 @@ function difTwo() {
                 cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cardsMatched.push(selectedCards);
                 scoreDisplay.textContent = ` ${cardsMatched.length}/${cardArray.length/2}`;
-                cards[choiceOneId].removeEventListener('click', flipcard);
-                cards[choiceTwoId].removeEventListener('click', flipcard);
                 alert('You found a match!')
             } else {
                 cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
@@ -674,7 +659,6 @@ function difThree() {
         // Timer Check
         function startTimerCheck() {
             if (option == 'L3') {
-                console.log('timerCheck3');
                 startTimer();
             }
         }
@@ -682,7 +666,6 @@ function difThree() {
         // Add Event Listeners To Cards
         function eventListeners() {
             if (option == 'L3') {
-                console.log('eventThree');
                 $('img').click(flipcard);
             }
         }
@@ -710,8 +693,6 @@ function difThree() {
                 cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cardsMatched.push(selectedCards);
                 scoreDisplay.textContent = ` ${cardsMatched.length}/${cardArray.length/2}`;
-                cards[choiceOneId].removeEventListener('click', flipcard);
-                cards[choiceTwoId].removeEventListener('click', flipcard);
                 alert('You found a match!')
             } else {
                 cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
