@@ -31,6 +31,12 @@ document.addEventListener('DOMContentLoaded', () => {
     menuArray[3].setAttribute('class', 'btn-warning btn-lg menuButtons difTwo');
     menuArray[4].setAttribute('class', 'btn-warning btn-lg menuButtons difThree');
 
+    $(difficultyLevel).append(levelOne, levelTwo, levelThree);
+    $(gameInitiate).append(startButton);
+    $(resetTime).append(resetButton);
+
+    // Menu Event Listeners
+
     levelOne.addEventListener('click', gameKey1);
     levelTwo.addEventListener('click', gameKey2);
     levelThree.addEventListener('click', gameKey3);
@@ -39,18 +45,25 @@ document.addEventListener('DOMContentLoaded', () => {
     levelTwo.addEventListener('click', difTwo);
     levelThree.addEventListener('click', difThree);
 
-    $(difficultyLevel).append(levelOne, levelTwo, levelThree);
-    $(gameInitiate).append(startButton);
-    $(resetTime).append(resetButton);
+    // Timer Controls
 
-    $('.difOne, .difTwo, .difThree').click(function pauseTimer (e) {
-        e.preventDefault();
+    $('.difOne, .difTwo, .difThree').click(function pauseTimer (a) {
+        a.preventDefault();
         reset = true;
     });
     
-    $(startButton).click(function playTimer (a) {
-        a.preventDefault();
+    $(startButton).click(function playTimer (b) {
+        b.preventDefault();
         reset = false;
+    });
+
+    $(resetButton).click(function resetTimer (c) {
+        c.preventDefault();
+        minute = 0;
+        second = 0;
+        setTimeout(() => {
+            reset = true
+        }, 1000);
     });
 
     difOne();
@@ -97,7 +110,7 @@ setInterval(function timer() {
             hour++;
             minute = 0;
         }
-        if (minute == 1 && second == 1) {
+        if (minute == 2 && second == 1) {
             reset = true;
         }
     }
