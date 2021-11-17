@@ -34,6 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
     levelTwo.addEventListener('click', difTwo);
     levelThree.addEventListener('click', difThree);
 
+    $(levelOne).trigger('click');
+
     $(levelOne, levelTwo, levelThree).on('click', function (e) {
         e.preventDefault();
         reset = true;
@@ -47,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
     $(difficultyLevel).append(levelOne, levelTwo, levelThree);
     $(gameInitiate).append(startButton);
 
-    $('.difOne').trigger('click');
 })
 
 // Difficulty Select Key
