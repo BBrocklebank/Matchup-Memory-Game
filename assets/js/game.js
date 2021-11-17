@@ -5,26 +5,30 @@ document.addEventListener('DOMContentLoaded', () => {
     let difficultyLevel = $('.levelChoice');
 
     let startButton = document.createElement('button');
+    let resetButton = document.createElement('button');
     let levelOne = document.createElement('button');
     let levelTwo = document.createElement('button');
     let levelThree = document.createElement('button');
 
     startButton.innerHTML = "Start";
+    resetButton.innerHTML = 'Reset Timer'
     levelOne.innerHTML = "Difficulty Level 1";
     levelTwo.innerHTML = "Difficulty Level 2";
     levelThree.innerHTML = "Difficulty Level 3";
 
     menuArray = [
         startButton,
+        resetButton,
         levelOne,
         levelTwo,
         levelThree
     ]
 
     menuArray[0].setAttribute('class', 'btn-success btn-lg menuButtons startGame');
-    menuArray[1].setAttribute('class', 'btn-warning btn-lg menuButtons difOne difStart');
-    menuArray[2].setAttribute('class', 'btn-warning btn-lg menuButtons difTwo');
-    menuArray[3].setAttribute('class', 'btn-warning btn-lg menuButtons difThree');
+    menuArray[1].setAttribute('class', 'btn-danger btn-lg menuButtons resetButton');
+    menuArray[2].setAttribute('class', 'btn-warning btn-lg menuButtons difOne');
+    menuArray[3].setAttribute('class', 'btn-warning btn-lg menuButtons difTwo');
+    menuArray[4].setAttribute('class', 'btn-warning btn-lg menuButtons difThree');
 
     levelOne.addEventListener('click', gameKey1);
     levelTwo.addEventListener('click', gameKey2);
@@ -34,20 +38,20 @@ document.addEventListener('DOMContentLoaded', () => {
     levelTwo.addEventListener('click', difTwo);
     levelThree.addEventListener('click', difThree);
 
-    $(levelOne).trigger('click');
 
-    $(levelOne, levelTwo, levelThree).on('click', function (e) {
-        e.preventDefault();
-        reset = true;
-    });
-
-    $(startButton).on('click', function (e) {
-        e.preventDefault();
-        reset = false;
-    });
 
     $(difficultyLevel).append(levelOne, levelTwo, levelThree);
     $(gameInitiate).append(startButton);
+
+    $('.difOne, .difTwo, .difThree').on('click', function (e) {
+        e.preventDefault();
+        reset = true;
+    });
+    
+    $(startButton).on('click', function (a) {
+        a.preventDefault();
+        reset = false;
+    });
 
 })
 
@@ -674,3 +678,8 @@ function difThree() {
         }
     }
 }
+
+setTimeout(() => {
+    $(difOne).trigger('click');
+    console.log('L1Load')
+}, 100);
