@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
     $(resetTime).append(resetButton);
 
     // Menu Event Listeners
-
     levelOne.addEventListener('click', gameKey1);
     levelTwo.addEventListener('click', gameKey2);
     levelThree.addEventListener('click', gameKey3);
@@ -46,18 +45,18 @@ document.addEventListener('DOMContentLoaded', () => {
     levelThree.addEventListener('click', difThree);
 
     // Timer Controls
-
-    $('.difOne, .difTwo, .difThree').click(function pauseTimer (a) {
+    $('.difOne, .difTwo, .difThree').click(function pauseTimer(a) {
         a.preventDefault();
         reset = true;
     });
-    
-    $(startButton).click(function playTimer (b) {
+
+    $(startButton).click(function playTimer(b) {
         b.preventDefault();
         reset = false;
     });
 
-    $(resetButton).click(function resetTimer (c) {
+    // Reset Button
+    $(resetButton).click(function resetTimer(c) {
         c.preventDefault();
         minute = 0;
         second = 0;
@@ -65,15 +64,15 @@ document.addEventListener('DOMContentLoaded', () => {
             reset = true
         }, 1000);
 
-        if(option == 'L1') {
+        if (option == 'L1') {
             functionLimitOne = [];
             difOne();
             functionLimitOne++
-        } else if(option == 'L2') {
+        } else if (option == 'L2') {
             functionLimitTwo = [];
             difTwo();
             functionLimitTwo++
-        } else if(option == 'L3') {
+        } else if (option == 'L3') {
             functionLimitThree = [];
             difThree();
             functionLimitThree++
@@ -146,8 +145,8 @@ function difOne() {
 
         let selectedCards = [];
         let selectedCardsId = [];
-        let cardsMatched = [];
-
+        let scoreTrack = 0;
+       
         // Cards Array
         let cardArray = [{
                 name: '1',
@@ -231,8 +230,8 @@ function difOne() {
             }
         }
 
-         // StartGame
-         $('.startGame').click(eventListeners);
+        // StartGame
+        $('.startGame').click(eventListeners);
 
         // Card Flip
         function flipcard() {
@@ -247,20 +246,19 @@ function difOne() {
 
         // Check Cards
         function checkCards() {
-
             let cards = document.getElementsByTagName('img');
             let choiceOneId = selectedCardsId[0];
             let choiceTwoId = selectedCardsId[1];
             if ((selectedCards[0] === selectedCards[1]) && (selectedCardsId[0] !== selectedCardsId[1])) {
-                alert('You found a match!')
                 cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
-                cardsMatched.push(selectedCards);
+                scoreTrack++;
                 $(cards[choiceOneId]).off('click', flipcard);
                 $(cards[choiceTwoId]).off('click', flipcard);
-                scoreDisplay.textContent = ` ${cardsMatched.length}/${cardArray.length/2}`;
+                scoreDisplay.textContent = ` ${scoreTrack}/${cardArray.length/2}`;
+                alert('You found a match!');
             } else {
-                alert('Wrong match! Try again!')
+                alert('Wrong match! Try again!');
                 cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
                 cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
             }
@@ -268,7 +266,7 @@ function difOne() {
             selectedCards = [];
             selectedCardsId = [];
 
-            if (cardsMatched.length === cardArray.length / 2) {
+            if (scoreTrack === cardArray.length / 2) {
                 scoreDisplay.textContent = " Congratulations! You've completed difficulty level 1!";
             }
 
@@ -292,8 +290,8 @@ function difTwo() {
 
         let selectedCards = [];
         let selectedCardsId = [];
-        let cardsMatched = [];
-
+        let scoreTrack = 0;
+       
         // Cards Array
         let cardArray = [{
                 name: '1',
@@ -423,8 +421,8 @@ function difTwo() {
             }
         }
 
-         // StartGame
-         $('.startGame').click(eventListeners);
+        // StartGame
+        $('.startGame').click(eventListeners);
 
         // Card Flip
         function flipcard() {
@@ -447,10 +445,10 @@ function difTwo() {
             if ((selectedCards[0] === selectedCards[1]) && (selectedCardsId[0] !== selectedCardsId[1])) {
                 cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
-                cardsMatched.push(selectedCards);
-                $(cards[choiceOneId]).off('click');
-                $(cards[choiceTwoId]).off('click');
-                scoreDisplay.textContent = ` ${cardsMatched.length}/${cardArray.length/2}`;
+                scoreTrack++;
+                $(cards[choiceOneId]).off('click', flipcard);
+                $(cards[choiceTwoId]).off('click', flipcard);
+                scoreDisplay.textContent = ` ${scoreTrack}/${cardArray.length/2}`;
                 alert('You found a match!')
             } else {
                 cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
@@ -460,7 +458,7 @@ function difTwo() {
             selectedCards = [];
             selectedCardsId = [];
 
-            if (cardsMatched.length === cardArray.length / 2) {
+            if (scoreTrack === cardArray.length / 2) {
                 scoreDisplay.textContent = " Congratulations! You've completed difficulty level 2!";
             }
         }
@@ -482,7 +480,7 @@ function difThree() {
 
         let selectedCards = [];
         let selectedCardsId = [];
-        let cardsMatched = [];
+        let scoreTrack = 0;
 
         // Cards Array
         let cardArray = [{
@@ -685,10 +683,10 @@ function difThree() {
             if ((selectedCards[0] === selectedCards[1]) && (selectedCardsId[0] !== selectedCardsId[1])) {
                 cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
                 cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
-                cardsMatched.push(selectedCards);
-                $(cards[choiceOneId]).off('click');
-                $(cards[choiceTwoId]).off('click');
-                scoreDisplay.textContent = ` ${cardsMatched.length}/${cardArray.length/2}`;
+                scoreTrack++;
+                $(cards[choiceOneId]).off('click', flipcard);
+                $(cards[choiceTwoId]).off('click', flipcard);
+                scoreDisplay.textContent = ` ${scoreTrack}/${cardArray.length/2}`;
                 alert('You found a match!')
             } else {
                 cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
@@ -698,7 +696,7 @@ function difThree() {
             selectedCards = [];
             selectedCardsId = [];
 
-            if (cardsMatched.length === cardArray.length / 2) {
+            if (scoreTrack === cardArray.length / 2) {
                 scoreDisplay.textContent = " Congratulations! You've completed difficulty level 3!";
             }
         }
