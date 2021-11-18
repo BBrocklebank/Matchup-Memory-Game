@@ -35,7 +35,7 @@ img {
 }
 
 img.hover {
-    filter:invert(100%);
+    filter: invert(100%);
 }
 
 /* Start Menu */
@@ -83,8 +83,12 @@ img.hover {
     width: 75vw;
 }
 
+.feedback {
+    margin-top: 20px;
+}
+
 .form-name {
-margin: 10px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
 }
 
 .form-email {
