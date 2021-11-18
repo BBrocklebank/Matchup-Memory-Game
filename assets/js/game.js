@@ -235,7 +235,7 @@ function difOne() {
         // Add Event Listeners To Cards
         function eventListeners() {
             if (option == 'L1') {
-                $('img').click(flipcard);
+                $('img').off('click').on('click', flipcard);
             }
         }
 
@@ -431,7 +431,7 @@ function difTwo() {
         // Add Event Listeners To Cards
         function eventListeners() {
             if (option == 'L2') {
-                $('img').click(flipcard);
+                $('img').off('click').on('click', flipcard);
             }
         }
 
@@ -672,7 +672,7 @@ function difThree() {
         // Add Event Listeners To Cards
         function eventListeners() {
             if (option == 'L3') {
-                $('img').click(flipcard);
+                $('img').off('click').on('click', flipcard);
             }
         }
 
