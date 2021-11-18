@@ -11,8 +11,8 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Matchup Memory Contact Page</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
         (function () {
             emailjs.init("user_2uOlbnnNcbhbOjoMXV0Zn");
         })();
@@ -47,7 +47,7 @@
                 </button>
 
                 <!-- Sign Up Modal -->
-                <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="Sign up modal"
+                <div class="modal fade" id="signUpModal" tabindex="-1"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -94,7 +94,7 @@
                     <form onsubmit="return sendMail(this);">
                         <input type="text" name="name" class="form-control form-name" id="fullname" placeholder="Name"
                             required />
-                        <input type="text" name="emailaddress" class="form-control from-email" id="emailaddress"
+                        <input type="text" name="emailaddress" class="form-control from-email" id="emailaddress1"
                             placeholder="Email" required />
                         <textarea rows="5" name="message" class="form-control form-message" id="message"
                             placeholder="Message" required></textarea>
@@ -107,9 +107,9 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <span class="justify-content-center align-middle d-flex">
+        <div class="justify-content-center align-middle d-flex">
             <p class="text-muted footer-text">Matchup Memory all rights reserved 2021</p>
-        </span>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"

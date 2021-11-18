@@ -1,6 +1,10 @@
+/*jshint esversion: 6 */
+/*globals $:false */
+/*globals menuArray:false */
+/*globals hour:false */
+/*jshint -W020 */ 
 // Menu Generator
 document.addEventListener('DOMContentLoaded', () => {
-
     let gameInitiate = $('.startButton');
     let resetTime = $('.resetButton');
     let difficultyLevel = $('.levelChoice');
@@ -13,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let levelThree = document.createElement('button');
 
     startButton.innerHTML = "Start";
-    resetButton.innerHTML = 'Reset Game'
+    resetButton.innerHTML = 'Reset Game';
     levelOne.innerHTML = "Difficulty Level 1";
     levelTwo.innerHTML = "Difficulty Level 2";
     levelThree.innerHTML = "Difficulty Level 3";
@@ -24,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         levelOne,
         levelTwo,
         levelThree
-    ]
+    ];
 
     menuArray[0].setAttribute('class', 'btn-success btn-lg menuButtons startGame');
     menuArray[1].setAttribute('class', 'btn-danger btn-lg menuButtons resetButton');
@@ -62,50 +66,50 @@ document.addEventListener('DOMContentLoaded', () => {
         minute = 0;
         second = 0;
         setTimeout(() => {
-            reset = true
+            reset = true;
         }, 1000);
 
         if (option == 'L1') {
             functionLimitOne = [];
             difOne();
-            functionLimitOne++
+            functionLimitOne++;
         } else if (option == 'L2') {
             functionLimitTwo = [];
             difTwo();
-            functionLimitTwo++
+            functionLimitTwo++;
         } else if (option == 'L3') {
             functionLimitThree = [];
             difThree();
-            functionLimitThree++
+            functionLimitThree++;
         }
 
     });
 
     // Instructions
-    let instructionsBox = "<h4>Instructions!</h4><p>To play, select a difficulty level which will load a number of cards. Press 'Start' to begin the timer and try to match them all before time runs out! Don't worry, you can always reset the timer and try again using the 'Reset Game' button.</p>"
+    let instructionsBox = "<h4>Instructions!</h4><p>To play, select a difficulty level which will load a number of cards. Press 'Start' to begin the timer and try to match them all before time runs out! Don't worry, you can always reset the timer and try again using the 'Reset Game' button.</p>";
     instructions.append(instructionsBox);
 
     difOne();
     gameKey1();
 
-})
+});
 
 // Difficulty Select Key
 let option = [];
 
 function gameKey1() {
     option = [];
-    option.push('L1')
+    option.push('L1');
 }
 
 function gameKey2() {
     option = [];
-    option.push('L2')
+    option.push('L2');
 }
 
 function gameKey3() {
     option = [];
-    option.push('L3')
+    option.push('L3');
 }
 
 //  Timer - Taken from Sandra Israel-Ovirih and modified - referenced in sources 
@@ -203,7 +207,7 @@ function difOne() {
                 name: '6',
                 img: '../Matchup-Memory-Game/assets/images/6_card.png'
             }
-        ]
+        ];
 
         cardArray.sort(() => 0.5 - Math.random());
 
@@ -219,7 +223,7 @@ function difOne() {
         scoreDisplay.textContent = ` 0/${cardArray.length/2}`;
 
         // Create Board
-        function createBoard() {
+        let createBoard = function () {
             for (let i = 0; i < cardArray.length; i++) {
                 let card = document.createElement('img');
                 $(card).attr({
@@ -228,22 +232,22 @@ function difOne() {
                 });
                 $(grid1).append(card);
             }
-        }
+        };
 
-        createBoard()
+        createBoard();
 
         // Add Event Listeners To Cards
-        function eventListeners() {
+        let eventListeners = function eventListeners() {
             if (option == 'L1') {
                 $('img').off('click').on('click', flipcard);
             }
-        }
+        };
 
         // StartGame
         $('.startGame').click(eventListeners);
 
         // Card Flip
-        function flipcard() {
+        let flipcard = function flipcard() {
             let cardId = this.getAttribute('data-id');
             selectedCards.push(cardArray[cardId].name);
             selectedCardsId.push(cardId);
@@ -251,10 +255,10 @@ function difOne() {
             if (selectedCards.length === 2) {
                 setTimeout(checkCards, 500);
             }
-        }
+        };
 
         // Check Cards
-        function checkCards() {
+        let checkCards = function checkCards() {
             let cards = document.getElementsByTagName('img');
             let choiceOneId = selectedCardsId[0];
             let choiceTwoId = selectedCardsId[1];
@@ -280,7 +284,7 @@ function difOne() {
                 scoreDisplay.textContent = " Congratulations! You've completed difficulty level 1!";
             }
 
-        }
+        };
     }
 
 }
@@ -399,7 +403,7 @@ function difTwo() {
                 name: 'yellow',
                 img: '../Matchup-Memory-Game/assets/images/yellow_card.png'
             },
-        ]
+        ];
 
         cardArray.sort(() => 0.5 - Math.random());
 
@@ -415,7 +419,7 @@ function difTwo() {
         scoreDisplay.textContent = ` 0/${cardArray.length/2}`;
 
         // Create Board
-        function createBoard() {
+        let createBoard = function createBoard() {
             for (let i = 0; i < cardArray.length; i++) {
                 let card = document.createElement('img');
                 $(card).attr({
@@ -424,22 +428,22 @@ function difTwo() {
                 });
                 $(grid2).append(card);
             }
-        }
+        };
 
-        createBoard()
+        createBoard();
 
         // Add Event Listeners To Cards
-        function eventListeners() {
+        let eventListeners = function eventListeners() {
             if (option == 'L2') {
                 $('img').off('click').on('click', flipcard);
             }
-        }
+        };
 
         // StartGame
         $('.startGame').click(eventListeners);
 
         // Card Flip
-        function flipcard() {
+        let flipcard = function flipcard() {
             let cardId = this.getAttribute('data-id');
             selectedCards.push(cardArray[cardId].name);
             selectedCardsId.push(cardId);
@@ -447,10 +451,10 @@ function difTwo() {
             if (selectedCards.length === 2) {
                 setTimeout(checkCards, 500);
             }
-        }
+        };
 
         // Check Cards
-        function checkCards() {
+        let checkCards = function checkCards() {
             let cards = document.getElementsByTagName('img');
             let choiceOneId = selectedCardsId[0];
             let choiceTwoId = selectedCardsId[1];
@@ -465,7 +469,7 @@ function difTwo() {
             } else {
                 cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
                 cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
-                alert('Wrong match! Try again!')
+                alert('Wrong match! Try again!');
             }
             selectedCards = [];
             selectedCardsId = [];
@@ -474,7 +478,7 @@ function difTwo() {
                 reset = true;
                 scoreDisplay.textContent = " Congratulations! You've completed difficulty level 2!";
             }
-        }
+        };
     }
 }
 
@@ -640,7 +644,7 @@ function difThree() {
                 name: 'F',
                 img: '../Matchup-Memory-Game/assets/images/f_card.png'
             },
-        ]
+        ];
 
         cardArray.sort(() => 0.5 - Math.random());
 
@@ -656,31 +660,31 @@ function difThree() {
         scoreDisplay.textContent = ` 0/${cardArray.length/2}`;
 
         // Create Board
-        function createBoard() {
+        let createBoard = function createBoard() {
             for (let i = 0; i < cardArray.length; i++) {
                 let card = document.createElement('img');
                 $(card).attr({
                     'src': '../Matchup-Memory-Game/assets/images/star_card.png',
-                    'data-id': i
+                    'data-id': i,
                 });
                 $(grid3).append(card);
             }
-        }
+        };
 
         createBoard();
 
         // Add Event Listeners To Cards
-        function eventListeners() {
+        let eventListeners = function eventListeners() {
             if (option == 'L3') {
                 $('img').off('click').on('click', flipcard);
             }
-        }
+        };
 
         // StartGame
         $('.startGame').click(eventListeners);
 
         // Card Flip
-        function flipcard() {
+        let flipcard = function flipcard() {
             let cardId = this.getAttribute('data-id');
             selectedCards.push(cardArray[cardId].name);
             selectedCardsId.push(cardId);
@@ -688,10 +692,10 @@ function difThree() {
             if (selectedCards.length === 2) {
                 setTimeout(checkCards, 500);
             }
-        }
+        };
 
         // Check Cards
-        function checkCards() {
+        let checkCards = function checkCards() {
             let cards = document.getElementsByTagName('img');
             let choiceOneId = selectedCardsId[0];
             let choiceTwoId = selectedCardsId[1];
@@ -706,7 +710,7 @@ function difThree() {
             } else {
                 cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
                 cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
-                alert('Wrong match! Try again!')
+                alert('Wrong match! Try again!');
             }
             selectedCards = [];
             selectedCardsId = [];
@@ -715,6 +719,6 @@ function difThree() {
                 reset = true;
                 scoreDisplay.textContent = " Congratulations! You've completed difficulty level 3!";
             }
-        }
+        };
     }
 }
