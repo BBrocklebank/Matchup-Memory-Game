@@ -241,6 +241,53 @@ Simple footer providing a copyright statement for legal purposes.
  
   -  Modal alerts during game
 
+
+## Js Game Code 
+
+Significant bugs were detected during the process of developing this section of the project. During the making of this I kept a small journal noting all bugs that I encounterd and how I solved them. These correlate with the bug fixed committed during development. 
+
+### Bugs List - Check commits for BUG-comparison images
+
+1. No href on signup dropdown link meant cursor didn’t change to pointed hand 
+
+2. Jquery image locations not accurate, switch to vanilla js 
+
+3. .each  jQuery no index number to use, changed to vanilla js loop to assign index to cards for identification
+
+4. jQuery event listener wouldn’t pass card variable data. Assigned to new variable and passed this
+
+5. Wrong array in if statement of check cards (using id array instead of name). As ids are different for each card, would never display correct match 
+
+6. Matched cards would show again if clicked, removed event listeners before adding them with .click to stop this 
+
+8. Attempting to display matched cards score before cards have been added to matchedCards array, fix, relocate code to after event/required placeholder text as score displays code within function/if statement so no display beforehand 
+
+9. Grid select changed class of grid div, grid select ceased to function. Added id to grid div and added set class attribute for each difficulties grid select function. 
+
+10. Selecting difficulties would place all images elements into div along with last used, overwhelming page. Cleared grid html to prevent this. 
+
+11. Cards could be flipped from moment of load, prevented this by only adding event listeners when start is clicked
+
+12. start button triggering every all dif functions, added key system to only trigger desired functions 
+
+13. selecting difficulty then wouldn’t let you select it. Fixed by wiping opposing control arrays within dif functions 
+
+14. Added conditional statements to prevent start button triggering dif timer and event listeners unless that level was explicitly chosen
+
+15. Selecting same card would cause match alert, added conditional to check cardId isn’t the same 
+
+16. Mixing vanilla javascript and jQuery in same line of code to remove event listeners didn’t work 
+
+17. dif one not being invoked on load, moved call to end of js file
+
+18. ## jQuery event click array causing multiple functions calls, cleared event listeners before adding in each dif function. This bug took considerable time to discover within debugger due to it's embedded nature within jQuery itself and not the code I had written on surface level. 
+
+
+## Js Email Code 
+
+This section code didn't require many fixes, it was the quickest and smoothest part of development no doubt to the abundance of documentation available for EmailJS. As such no bugs were encountered. Some issues occured with naming finctions but these were trivial issues. 
+
+
 ## Technologies Used
 
 ###Languages
