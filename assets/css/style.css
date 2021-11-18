@@ -1,4 +1,9 @@
-/* ..............Game................ */
+/* ..............Homepage................ */
+/* Backgroudnd */
+.background {
+    background-color: #ffb5f0;
+    margin-top: 30px;
+}
 
 /* Score */
 .score {
@@ -38,6 +43,11 @@ img.hover {
 .menuButtons {
     margin: 6px;
     border-color: black;
+}
+
+/* Instructions */
+.instructions {
+    margin-top: 10px;
 }
 
 /* Footer */

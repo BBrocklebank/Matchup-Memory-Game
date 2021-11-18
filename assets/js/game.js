@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let gameInitiate = $('.startButton');
     let resetTime = $('.resetButton');
     let difficultyLevel = $('.levelChoice');
+    let instructions = $('.instructions');
 
     let startButton = document.createElement('button');
     let resetButton = document.createElement('button');
@@ -79,6 +80,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     });
+
+    // Instructions
+    let instructionsBox = "<h4>Instructions!</h4><p>To play, select a difficulty level which will load a number of cards. Press 'Start' to begin the timer and try to match them all before time runs out! Don't worry, you can always reset the timer and try again using the 'Reset Game' button.</p>"
+    instructions.append(instructionsBox);
 
     difOne();
     gameKey1();
