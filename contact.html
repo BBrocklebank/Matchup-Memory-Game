@@ -58,11 +58,23 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                ...
+                                <section class="container-fluid ">
+                                    <div class="row feedback bg-color-contact justify-content-center">
+                                        <div>
+                                            <h3 class="contact-heading uppercase text-center">Signup for updates and alerts</h3>
+                                        </div>
+                                        <div class="center-form justify-content-center">
+                                            <form onsubmit="return submission(this);">
+                                                <input type="text" name="emailaddress" class="form-control from-email" id="emailaddress"
+                                                    placeholder="Email" required />
+                                                <button type="submit" class="btn btn-secondary center-block contact-button">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Sign up</button>
                             </div>
                         </div>
                     </div>
@@ -96,7 +108,7 @@
     <!-- Footer -->
     <footer class="footer">
         <span class="justify-content-center align-middle d-flex">
-            <p class="text-muted footer-text">Place sticky footer content here.</p>
+            <p class="text-muted footer-text">Matchup Memory all rights reserved 2021</p>
         </span>
     </footer>
 
