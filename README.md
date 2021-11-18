@@ -1,4 +1,4 @@
-# Wolf Alice Official
+# Matchup Memory Game
 
 ## README
 <hr>
@@ -6,193 +6,228 @@
 
 #### Project Goals/Target Audience
 <hr>
-Wolf Alice Official is the bands most comprehensive web presence in terms of content and information. It is designed to be responsive and accessible on a wide variety of devices, ensuring it is easy to explore and navigate for all users. Wolf Alice Official is useful for fans both new and old to discover the latest releases, band history, upcoming shows, merchandise and discography.
+Memory Match is a fun, lighthearted and non intensive brain training game. Designed to be interactive and provide feedback to the user where necessary, its purpose is to provide entertainment and light exercise of short term memory. The application will be minimal in its processing needs and thereby be playable on a range of processors and devices of varying specification.
 <br>  <br>
-The sites main purpose is to provide a hub of content/information to new and returning fans of the band. This is with the aim of increasing listeners across streaming services and producing higher sales of tickers/merchandise as a result. Second to this the site also provides clickthrough to social media, where users will be further exposed to the bands content/marketing. Signup for direct inbox updates and announcements is also provided to further submerse users in content. 
+The applications main goals rest in providing entertainment whilst testing/improving a users short term memory. This will be achieved by providing a number of hidden items that the user can select and temporarily reveal. They will then have to match these with corresponding items elsewhere on the page. This is in the hopes that repeat games will improve the users ability to recall items quickly and correctly. 
 <br>   <br>
-Wolf Alice official’s target audience is diverse in sense of background, age and qualifications, as music can be incredibly subjective. Though it is expected that the majority user bass will have an age range of between 15 and 45 years old. It can be inferred from this that both mobile and desktop responsiveness is essential. It also requires all content to be family friendly. 
+Memory Match’s target audience is recommended at ages 5+, with no specific background, cultural distinction or qualifications being its intended user base. The basic nature of the game provides a high level of accessibility to an enormous range of adults and children, though there is a special consideration. Although not specifically designed for this purpose, Memory Match has the potential to provide important brain training for those suffering with any memory based or cognitive conditions. In unison with this is can also provide brain development assistance in children. 
 
 <br>
 <br>
 
-![Mockup of Wolf Alice Official](assets/readme/site-mockup.png) 
+![Mockup of Matchup Memory Game](assets/readme/site_mockup.png) 
 
 ## User Experience
 
+### Player Goals
+
+- Large clickable areas for children’s ease and mobility impaired
+  <br>
+- Fun to play and engage with
+<br>
+- Satisfying to win
+<br>
+- Encouraging on loss
+<br>
+- Intuitive controls for children and less able 
+<br>
+- Intriguing imagery for all players
+  <br>
+  <br>
+
+### Parent/Guardian Goals
+
+- Content suitable to young children and those sensitive to it
+  <br>
+- Encouraging and not frustrating
+  <br>
+- Provide developmental value to short term memory 
+  <br>
+- Enjoyable for child/individual 
+  <br>
+- Deliver some educational content
+<br>
+<br>
+
+### Developer Goals
+
+- Simple to use
+  <br>
+- Entertaining experience 
+  <br>
+- Low stress usage
+<br>
+- Provide value to user
+  <br>
+- Enhance user short term memory
+<br>
+- High compatibility for user ease of access 
+  <br>
+  <br>
+
+
 ### User Stories 
 
-* First time Visitor Goals
+* First time User Goals
 
-  - As a First Time Visitor, I want to easily ascertain the main purpose of the site and learn more about the band and their history. 
+  - As a first time user, I want to easily ascertain the main purpose of the application and its value to me. 
   <br>
-  - As a First Time Visitor, I want to easily navigate the entirety of the site to find/discover content.
-      <br>
-  - As a First Time Visitor, I want to look for their latest releases and where/how I can listen to them.
+  - As a first time user, I want to easily interact with the application and its controls, visibly receiving feedback. 
   <br>
-  - As a First Time Visitor, I wish to see exciting images and video to inform me on the bands visuals and aesthetic/style.
+  - As a first time user, I wish to see exciting images and animations that draw me into the application further.
   <br>
-  - As a First Time Visitor, I wish to discover their social media channels, to gain further insight into the band themselves and the content they publish.
+  - As a first time user, I want to be entertained whilst using the application.
   <br>
-* Returning Visitor Goals
   <br>
-  - As a returning visitor I wish to find information about where the band are playing live and if I can attend.
+* Returning User Goals
   <br>
-  - As a returning visitor I want to know if there are any merchandise I can purchase and from where. 
+  - As a returning user I wish to beat my previous score/time.
   <br>
-  - As a returning visitor I wish to gain a more in-depth history of the band and how they began their journey.
+  - As a returning user I wish to improve my short term memory performance. 
+  <br>
+  - As a returning user I want to know if there are any more games I can access by the same developer.
+  <br>
   <br>
 * Frequent User Goals
   <br>
-  - As a frequent user, I want to check to see if there are any new releases or announcements.
+  - As a frequent user, I want to be able to raise the difficulty to keep the game engaging.
   <br>
-  - As a frequent, I wish to know how to book the band for private functions and/or public events.
+  - As a frequent user, I want to provide feedback to the developer on improvements and potential new features.
   <br>
- * Business/Developer Goals
   <br>
-   - As a business, I want new users to discover the latest release from the band.
+ * User (child)
   <br>
-   - As a business, I want new users to clickthrough to streaming services and social media.
+   - I wish the game to be aesthetically appealing and interesting, gaining my attention. 
   <br>
-   - As a business, I want to be contacted about new bookings and potential events.
+   - Controls should be obvious and visibly displayed to me in some way.
   <br>
-   - As a business I want returning users to purchase tour tickets.
+   - I should be able to pick a difficulty.
   <br>
-   - As a business I want returning users to purchase merchandise.
+   - Should be in some way new each time I play.
   <br>
-   - As a business I want returning users to signup for announcements and releases.
   <br>
-   - As a business I want users to seek out the bands discography and listen.
+  * Developer Goals
+  <br>
+  - As a developer, I want new users to discover the application.
+  <br>
+  - As a developer, I want new users to engage with the application and enjoy it.
+  <br>
+  - As a developer, I want users to return to improve their scores and times.
+  <br>
+  - As a developer, I wish users to improve their short term memory performance.
+  <br>
+  - As a developer, I want returning users to provide feedback on improvements/features they      
+    wish to see.
+  <br>
+  - As a developer, I want returning users to signup for announcements and future projects.
+  <br>
+  <br>
 
 ## Design 
 
+### Design Choices
+
+Beginning this stage by researching other available matching card games I began to make a list of desirable design aspects I wanted to be included. Top priorities were to make the design appealing to children and adults alike, to present an engaging colour scheme and objects to interact with. The use of shapes stood out as a fine way to draw the user in to select cards and see what’s hidden underneath. Alongside this the need to make the cards themselves visually appealing was evident in my own research, games I enjoyed most did this. 
+
+Interactivity needed to be simple and precise, one should be able to understand the games and its controls instinctively. Simplicity was key here and thus clear, large buttons where used alongside clearly differentiated cards to select from. Basic instructions were also included but the design has been constructed as such that these shouldn’t always be necessary. 
+
+To fulfil the educational aspect of the user requirements I opted to include numbers, colours and letters as the matching criteria for the game. These provide a low level challenge with some language/numeracy development for children and potentially for the impaired. Together with the training of memory these should serve to provide some revision for those in need of it, it’s also provides a nice variation.
+
+Different difficulty levels allow the user to fine tune their experience and if so desired increase the challenge of the game to quite a high level. This variation makes the game more versatile for a large number of users and provides a reason to return. 
+
 ### Wireframes
 
-The following wireframes were constructed within Balsamiq(link this) during the Scope Plane section of the design and planning stage for this project. They represent an early design concept that has largely been kept to through to final product. However do note that they vary slightly from the final design, this is due to practical considerations that arose during the surface plane stage.
+The following wireframes were constructed within Balsamiq(link this) during the Scope Plane section of the design and planning stage for this project. They represent an early design concept that has largely been kept to through to final product. However do note that they vary slightly from the final design, this is due to practical considerations that arose during the surface plane stage. Some design aspects were altered due to time constraints and practical limitations however I feel the main aim of the project has been realised.
 
-[Homepage Dektop](assets/wireframes/homepage-dektop.png)
+[Homepage Dektop](assets/readme/homepage_desktop.png)
 
-[Homepage Tablet](assets/wireframes/homepage-tablet.png)
+[Homepage Tablet](assets/readme/homepage_tablet.png)
 
-[Homepage Phone](assets/wireframes/homepage-phone.png)
+[Homepage Phone](assets/readme/homepage_mobile.png)
 
-[Biography Dektop](assets/wireframes/bio-dektop.png)
+[Contact Dektop](assets/readme/contact_desktop.png)
 
-[Biography Tablet](assets/wireframes/bio-tablet.png)
+[Contact Tablet](assets/readme/contact_tablet.png)
 
-[Biography Phone](assets/wireframes/bio-phone.png)
+[Contact Phone](assets/readme/contact_mobile.png)
 
-[Music Dektop](assets/wireframes/music-dektop.png)
-
-[Music tablet](assets/wireframes/music-tablet.png)
-
-[Music Phone](assets/wireframes/music-phone.png)
-
-[Contact Dektop](assets/wireframes/contact-dektop.png)
-
-[Contact Tablet](assets/wireframes/contact-tablet.png)
-
-[Contact Phone](assets/wireframes/contact-phone.png)
-
-### Navigation Map 
-
-This navigation map shows final navigational paths through the site. There are pages listed here that are external links only, this is due to time constraints on the project. 
-
-![Site Map](assets/readme/site-map.png)
+[Initial Sketch](assets/readme/initial_sketch.jpg)
 
 ### Colours 
 
-The most prominent colours used are black, aqua blue, off-white and pale grey. Aqua blue is the colour of the Wolf Alice logo and thus fit the visual design. Note that the aqua blue used on various elements and the nav-bar is slightly brighter than the official logo, this is to increase contrast by design.
+Card colours used were carefully selected from a colour chart to include all major primary colours and then contrasting colours that suited visually. As seen colours assigned to cards with their names tally and there is continuation in the use of orange for numbers and aqua for letters. This is to prevent the visual aspect of the game becoming too busy or distracting. The colour continuity also provides an aid at the higher level difficulty with some visual memory assistance. 
 
-Background colours were chosen to contrast with images, icons and text as well as reduce eyestrain by being pale and not being overly bright shades. 
+The background colour of pale pink was chosen to contrast with images, icons and text as well as reduce eyestrain by being pale and not being an overtly bight colour on a screen. This colour isn’t used anywhere within the game itself. 
+
+Menu buttons were assigned colours based on the generic understanding that green begins things and red stops, yellow for selecting. This is a simple and reused concept found in everyday life through various means. 
+
 
 ### Fonts
 
-Roboto is the primary font for text on the site. This has been chosen due to it’s slightly curved design making it very easy to read at small sizes as well as large, great for responsiveness. A fallback font of Sans-serif has been set if for any reason Roboto is not displayed. Roboto was designed for use on the Android operating system and so is very compatible and fit for this purpose.
+For this project fonts were left as default as they were quite adequate to portray information. The main focus is the imagery and this is where I wanted the used to be drawn, having clear and concise scoring/instructions was all that was necessary.
 
-Benne is the font being applied to all headings and the navigation bar at the top of the site. This has been selected to as closely as possible match the official logo font for Wolf Alice. The continuity of the font across the sit has a very pleasing aesthetic effect and allows style to be applied without the sit feeling too “busy”. It is also a lightweight and clean font, responding well to smaller screen sizes.
+### Cards/Placeholders
 
-### Icons/Links
-
-Icons are used throughout the site in various fashions and are integral to the user stories and primary function of the site. Semantically placed the icons allow users to instinctively clickthrough from the site to desired destinations i.e. social media, streaming services.
-
-Social media icons were used to display anchor tags linking to their related channels. The use of these highly recognisable and obvious icons allows any user to quickly access their preferred platform. This is again repeated with icons linking to related music streaming platforms, obvious icons are used for the user to select their relevant link. 
+The cards were designed using GIMP 2.10, a free design tool that allowed me to create pixel specific sized squares and colour/label as I pleased. This worked very well as it allowed me to make adjustments as I developed the project and try different styles easily. It was also possible to set the compression amount upon exporting the files, enabling them to be the right size for web use. 
 
 
 ### Styling
 
-The layout of the site uses a repeated customised bootstrap grid design behind all content across the pages. This continuity is pleasing and doesn’t confuse.
+The general site layout is simple with little navigation needed. Placing the instructions at the bottom of the page enables mobile users to discover them is needed, however they can begin the instant the pages loads. This design enables access to the game with little fuss, no need to scroll the screen (apart from higher difficulty levels, screen size dependant). All of this comes together in allowing the game to present itself in a relaxed and smooth fashion which is ideal for parents and children trying to get to grips with what the site does. 
 
-Album artworks and related information are held within containers, the information with a border. This boxed design is clean and sharp allowing a large amount of information to be displayed without confusing the user. The repeated design is logical and naturally invites the user to scroll down to reveal more. On smaller screen sizes the borders around text are removed to cater to reduces size, reducing any cluttered feeling and refreshing the design.
+The contact form is clean and to the point, little styling makes it a simple affair to write the message required and submit. Likewise subscribing to the newsletter is swift and simple for the same reasons.
 
-As part of the design, this boxed approach allows for easy maintenance and site updates in the future. New information and images need only be added to copied segments of code. This applies to related icons/links also. 
-
-### Images
-
-Aesthetics on a band site are imperative. Images are the best way to immediately imprint on the user and encourage them to stay. The full-width hero image on the home screen is stark, impactful and has been placed to cause intrigue. 
-
-Album artworks are essential in the marketing of audio as they’re often the only images associated. The artworks on the site have been positioned and sized to offer a strong platter of contrast and colour. 
-
-The image found on the Biography page has been chosen to relate to the frequently referenced live shows found in the biography text. 
-
-### Backgrounds
-
-An off white bass found to the sides is covered by a darker cloudy grey in the centre to enable a strong but unobtrusive background to overlay information.
-
-## Video 
-
-Wolf Alice’s latest single has been embedded via Youtube into the homepage, diversifying the type of content available to the user. This imbues a sense of immediate discovery for the new release and doesn’t require the user to leave the page. It is hoped that this immediate immersion in the music will increase conversions of visitors into customers of music/merchandise etc. It also delivers quickly an idea of who the band are artistically. 
 
 ## Features
 
-* Existing Features 
+### Existing Features 
+
+- feedback form
+<br>
+- Reset button
+<br> 
+- Start Button 
+<br>
+- fully responsive
+<br>
+- Timer
+<br>
+- Game itself 
+<br>
+- Difficulty levels 
+<br>
+- feedback modal 
+<br>
+- colours, letters and numbers on cards for childrens reading 
+<br>
+<br>
+
 
 ### Navigation Bar
 
-![Navbar](assets/readme/navbar.png)
-
-Featured on all pages of the site the navigation bar provides links to the Homepage, Biography page, Music page and Contact page. It also provides external links to tour dates and merchandise. 
-
-It allows for fluent fuss free navigation of the whole site. 
-
-The navigation bar is fully responsive and at larger screen sizes provides a sign up button for announcements and releases.  
+Nav bar provides links to both pages and works interchangeably on both.
 
 ### Homepage
 
 ![Homepage](assets/readme/homepage.png)
 
-The homepage provides an immediate sense of what the site is intended for with clear logos, a large full width hero image and links to social channels at the forefront. 
-
-### Latest Release Section
-
-![Latest Release](assets/readme/latest-release.png)
-
-Delivering business and user goals together the latest release section provides information on the latest release as well as links to relevant streaming platforms and a vinyl store. 
-
-Eye catching artwork is position for user interest. 
-
-### Music
-
-![Music](assets/readme/discography.png)
-
-Utilising the same design found on the homepage but delivers the entire discography. Users are able to read information, track-lists and follow links to listen all from one page. 
-
-### Biography 
-
-![Biography](assets/readme/bio.png)
-
-Providing insight into the bands history the page is adorned with a large attention grabbing image that is related to the live shows referenced in the biography. 
+Providing the game itself this landing page provides a background alongside card grid, game start and reset buttons as well as difficulty select.
 
 ### Contact
 
 ![Contact](assets/readme/contact.png)
 
-This page provides essential service to the band allowing potential clients to contact them directly about bookings for shows and other events.
+Enabling users to contact the developer directly this page provide an easy and simple way to write a message.
+
+### Signup Modal
+
+![Contact](assets/readme/modal.png)
+
+Enabling users to get all the latest updates and information straight to their inbox this is essential retaining longterm user interest.
 
 ### Footer
 
-![Footer](assets/readme/footer.png)
-
-Unison across the site and fully responsive the footer provides social links on all devices and at larger sizes a homepage link and sign up button for announcements and releases.
+Simple footer providing a copyright statement for legal purposes.
 
 * Additional Features 
 
@@ -200,23 +235,15 @@ Unison across the site and fully responsive the footer provides social links on 
 
   - Contains interactive elements
 
-  - Video media - youtube
-
   - Inter-page links for navigation
 
-  - Signup modal
-
-  - Links to external platforms
-
- - Features Left To Implement
-
-    - Smooth link transition on homepage from hero image to release section
-
-   - Page dedicated to video content of the band on youtube
-
-   - Interactive hover buttons classes
+  - Timer
+ 
+  -  Modal alerts during game
 
 ## Technologies Used
+
+###Languages
 
 - HTML
 - CSS
@@ -228,7 +255,7 @@ Unison across the site and fully responsive the footer provides social links on 
   
     - Vs Code was used as the main editor for the project
   <br>
-- Bootstrap 4.2.1
+- Bootstrap 5
   
     - Bootstrap was used to assist in the layout, styling and responsiveness of the site
   <br>
@@ -251,10 +278,6 @@ Unison across the site and fully responsive the footer provides social links on 
   
     - Used to create wireframes and plan design of site
   <br>
-- Fontawesome 5.15.3
-  
-    - Used to provide icons across the site 
-  <br>
 - Google Fonts
   
     - Used to provide stylish and fitting fonts to the site
@@ -271,104 +294,123 @@ Unison across the site and fully responsive the footer provides social links on 
   
     - Provided with Bootstrap to enable certain responsive elements
   <br>
-- Tiny jpeg
+- GIMP
   
-    - Enabled compression of images to sizes more adequate for use on site
+    - Used to design and create img files specific to the project
 
 ## Testing
 
-### Validator Testing 
+### Validator Testing
 
-The entire site has been validated using the W3C Markup and W3C CSS validators. 
+The entire site has been validated using the W3C Markup, W3C CSS and JShint validators. 
 
-[Homepage](assets/readme/homepage-val.png)
+[Homepage HTML](assets/readme/homepage-val.png)
 
-[Music](assets/readme/music-val.png)
+[Contact HTML](assets/readme/contact-val.png)
 
-[Biography](assets/readme/bio-val.png)
+[Homepage js](assets/readme/homepagejs-val.png)
 
-[Contact](assets/readme/contact-val.png)
+[Contact js](assets/readme/contactjs-val.png)
 
 [CSS](assets/readme/css-val.png)
 
 ### Testing User Stories from User Experience (UX) Section 
 
-First Time Visitor Goals
+## User Stories
 
-- As a First Time Visitor, I want to easily ascertain the main purpose of the site and learn more about the band and their history. 
+### First Time User Goals (adult)
 
-  - Upon entering the site users will immediately see the navigation bar, which clearly depicts the bands logo and pages that can be visited, including biography and music. 
+- As a first time user, I want to easily ascertain the main purpose of the application and its value to me.
 
-  - The hero image and logo makes it very clear the site is about Wolf Alice
+- Upon entering the site, the user is presented with a clear grid and instructions from which to determine the use of the site and what it can do for them.
 
-  - Following the navigation queues or scrolling with both lead to the discovery of more content 
-  <br>
-- As a First Time Visitor, I want to easily navigate the entirety of the site to find/discover content.
-  
+- As a first time user, I want to easily interact with the application and its controls, visibly receiving feedback.
 
-  - The navigation bar is simplistic and intuitive to use, each new page offers content to discover.
-  <br>
-- As a First Time Visitor, I want to look for their latest releases and where/how I can listen to them.
+- Each button provides feedback to the user and all tiles change appearance when clicked upon. Alert modals provide feedback when making a correct or incorrect match as well as time running out or completing the game.
 
-  - Upon entering the site, the logo can be clicked or the user can scroll, revealing the latest release and links to streaming platforms. 
-  <br>
-- As a First Time Visitor, I wish to see exciting images and video to inform me on the bands visuals and aesthetic/style.
+- As a first time user, I wish to see exciting images and animations that draw me into the application further.
 
-  - The hero image is eye catching and intriguing from the moment users enter the site.
+- The game has a vibrant colour scheme that reveals itself when clicking the black cards to reveal contrasting colours with lettering.
 
-  - Video is embedded into the homepage and album artwork is placed in such a way that it is unavoidable on the homepage. 
+- As a first time user, I want to be entertained whilst using the application.
 
-  - The music page has further artwork to view and is of a large size. 
-  <br>
-- As a First Time Visitor, I wish to discover their social media channels, to gain further insight into the band themselves and the content they publish.
+- The score display and countdown are design to give a small sense of urgency and challenge. This should keep the pace high and the fun continuous.
+<br>
+<br>
 
-  - Social icons can be found on the hero image upon entering the site and also in the footer on every page. Allowing users to jump right to socials at a moments notice.
+### Returning User Goals (adult)
 
-Returning Visitor Goals
-  <br>
-- As a returning visitor I wish to find information about where the band are playing live and if I can attend. 
-  - The navigation bar has a clear link labelled “Live”, which will show users every available date and location the band are playing. 
-  <br>
-- As a returning visitor I want to know if there are any merchandise I can purchase and from where. 
-  - The navigation bar has a clear link labelled “Merch” which will take them to the official store where all merchandise can be found. 
-  <br>
-- As a returning visitor I wish to gain a more in-depth history of the band and how they began their journey.
-  - The biography page can be found in the navbar and will lead the user to a descriptive history of the band beginnings. 
+  As a returning user I wish to beat my previous score/time.
 
-Frequent User Goals
+- Easy reset of the game means a user can actively play again and again and beat their previous score or time.
 
-- As a frequent user, I want to check to see if there are any new releases or announcements.
-  - New releases can be found directly on the homepage, a signup options is available in the navbar and footer on large devices, alternatively in the navbar on small devices. 
-    <br>
-- As a frequent user, I wish to know how to book the band for private functions and/or public events.
-  - The contact page found in the navbar describes reasonable events and functions the band can be booked for, suppling a contact form to get in touch. 
+- As a returning user I wish to improve my short term memory performance.
 
-Business/Developer Goals
+- A requirement of the game is the use of short term memory. Repeated use will inherently improve this and the varying difficulty only improve this further.
 
-- As a business, I want new users to discover the latest release from the band.
-  - Upon entering the homepage the first thing visible once scrolling is the latest release section with  links and a youtube embed. 
-                                                                    <br>          
-- As a business, I want new users to clickthrough to streaming services and social media.
-  - Streaming service icons and social icons are strategically placed on the site to almost never be off screen, reinforcing the route to clickthrough. 
-  <br>
-- As a business, I want to be contacted about new bookings and potential events.
-  - Users can get in contact via the contact page and form provided, anyone can contact. 
-  <br>
-- As a business I want returning users to purchase tour tickets.
+- As a returning user I want to know if there are any more games I can access by the same developer.
 
-  - Linking from the navbar to the live section is seamless and easy.
-  <br>
-- As a business I want returning users to purchase merchandise.
-  - The merch section remains placed at the top of the page in the navbar and links directly to the official store. The vinyl icon also links to the store, increasing chances for sales. 
-  <br>
-- As a business I want returning users to signup for announcements and releases.
-  - Users may sign up on their first or last visit but the signup option is always clearly visible large devices and on small devices is included in the navbar. 
-  <br>
- - As a business I want users to seek out the bands discography and listen.  
-   - The discography is easily accessible and contains links for each specific release to all relevant streaming platforms.  
-  
+- A newsletter modal as well as feedback contact page allow users to contact the developer as well as getting updates to their inbox.
+<br>
+<br>
 
-## Further Testing 
+### Frequent User Goals (adult)
+
+- As a frequent user, I want to be able to raise the difficulty to keep the game engaging.
+
+- This is provided in the form of more cards to match in the same amount of time provide an adequate challenge.
+
+- As a frequent user, I want to provide feedback to the developer on improvements and potential new features.
+
+- Feedback can be provided through the contact page which allows questions and feedback.
+<br>
+<br>
+
+### User (child)
+
+- I wish the game to be aesthetically appealing and interesting, gaining my attention.
+
+- Bright primary colours when cards flip provide excitement and interest as they reveal themselves against the black of the other cards. Matched cards disappear creating a sense that you wish to clear them all.
+
+- Controls should be obvious and visibly displayed to me in some way.
+
+- Simple start and reset buttons as well as simple controls to tap/click to match cards easy to follow. Game feedback modals also aid this.
+
+- I should be able to pick a difficulty.
+
+- This is provided through the three options available with the third proving quite a challenge.
+
+- Should be in some way new each time I play.
+
+- The cards are randomised each time a used plays and with the lowest number of cards being 12 this provides hundreds of variations up to thousands of assortments on the top level.
+<br>
+<br>
+
+### Developer Goals
+
+- As a developer, I want new users to engage with the application and enjoy it.
+
+- The bug free application along with easy intuitive controls and difficulty levels is in good standing to provide entertainment and engagement to users.
+
+- As a developer, I want users to return to improve their scores and times.
+
+- The differing levels and score/time display within the game enhance the sense of competitiveness and this in turn can drive improvement.
+
+- As a developer, I wish users to improve their short term memory performance.
+
+- Repeated use of the game will inherently improve this without the users knowledge.
+
+- As a developer, I want returning users to provide feedback on improvements/features they  
+ wish to see.
+
+- The clearly labelled contact page and signup modal both offer a way for the developer and user to interact with each other even if not directly. Signing up for the newsletter might lead to a contact submission if questions arise from an update.
+
+- As a developer, I want returning users to signup for announcements and future projects.
+
+- Signup modal is clearly displayed on each page and has a unique colour to draw the users to it.
+
+
+## Further Testing
 
 ### Black Box
 
