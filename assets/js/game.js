@@ -229,6 +229,7 @@ function difOne() {
                 $(card).attr({
                     'src': '../Matchup-Memory-Game/assets/images/star_card.png',
                     'data-id': i,
+                    'alt': 'cards to be matched'
                 });
                 $(grid1).append(card);
             }
@@ -424,7 +425,8 @@ function difTwo() {
                 let card = document.createElement('img');
                 $(card).attr({
                     'src': '../Matchup-Memory-Game/assets/images/star_card.png',
-                    'data-id': i
+                    'data-id': i,
+                    'alt': 'cards to be matched'
                 });
                 $(grid2).append(card);
             }
@@ -666,6 +668,7 @@ function difThree() {
                 $(card).attr({
                     'src': '../Matchup-Memory-Game/assets/images/star_card.png',
                     'data-id': i,
+                    'alt': 'cards to be matched'
                 });
                 $(grid3).append(card);
             }

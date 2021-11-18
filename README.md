@@ -414,22 +414,34 @@ The entire site has been validated using the W3C Markup, W3C CSS and JShint vali
 
 ### Black Box
 
+This testng relates to final stage testing where bugs have been removed. See design stage for bug reports and fixes. 
+
 Test No | Test Feature | Expected Result | Actual | Pass/Fail
 ------------ | ------------- | ------------ | ------------ | -------------
-1 | Launch Site | Site loads homepage | PASS | Slight flicker, second load smooth (cached)|
+1 | Launch Site | Site loads homepage | PASS | |
 2 | Check Navbar styling | Navbar styled correctly  | PASS | 
-3 | Homepage images | Images in place | PASS | 
+3 | Homepage grid | cards in place | PASS | 
 4 | Font, size and style | Styled correctly | PASS | 
-5 | Intra-link | Links to latest release | PASS | 
-6 | All site navbar links | All links function as expected | PASS | 
-7 | Social icon links | Link to social platforms | PASS | 
-8 | Streaming icon links | Link to streaming platforms | PASS | 
-9 | Signup modal | Lauches onto page | PASS | 
-10 | Contact Form | Loads as designed | PASS | 
+5 | Start Button | Begins game operation/start timer | PASS | 
+6 | Cards | flip when selected | PASS | 
+7 | Cards | Match when correct, modal apears | PASS | 
+8 | Cards | Don't match when wrong, modal appears | PASS | 
+9 | Reset Button | Sets timer to zero and reloads grid | PASS | 
+10 | Dif Level One | Selects Grid One | PASS | 
+11 | Dif Level Two | Selects Grid Two | PASS | 
+12 | Dif Level Two | Selects Grid Three | PASS |
+13 | Contact Page | Loads correctly | PASS |
+14 | Contact Page | Successful form submission | PASS |
+15 | Contact Page | Successful modal submission | PASS |
+16 | Homepage | Successful modal submission | PASS |
+17 | Homepage | Game end when time reaches 4min | PASS |
+18 | Hompage  | User wins when all cards matched | PASS |
+19 | All site navbar links | All links function as expected | PASS | 
+20 | Homepage | Modal lauches onto page | PASS | 
+21 | Contact page | Modal lauches onto page | PASS | 
 
 ### Browsers
  - The site was tested on Google Chrome, Edge, Safari and Mozilla Firefox
-Lighthouse
 
 ### Lighthouse
  - Testing using lighthouse took place in chrome with these results link
