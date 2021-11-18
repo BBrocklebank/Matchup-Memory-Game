@@ -124,8 +124,10 @@ setInterval(function timer() {
             hour++;
             minute = 0;
         }
-        if (minute == 2 && second == 1) {
+        if (minute == 4 && second == 1) {
             reset = true;
+            alert('Out of time! Hit reset to try again!');
+
         }
     }
 }, 1000);
@@ -269,6 +271,7 @@ function difOne() {
             selectedCardsId = [];
 
             if (scoreTrack1 === cardArray.length / 2) {
+                reset = true;
                 scoreDisplay.textContent = " Congratulations! You've completed difficulty level 1!";
             }
 
@@ -463,6 +466,7 @@ function difTwo() {
             selectedCardsId = [];
 
             if (scoreTrack2 === cardArray.length / 2) {
+                reset = true;
                 scoreDisplay.textContent = " Congratulations! You've completed difficulty level 2!";
             }
         }
@@ -703,6 +707,7 @@ function difThree() {
             selectedCardsId = [];
 
             if (scoreTrack3 === cardArray.length / 2) {
+                reset = true;
                 scoreDisplay.textContent = " Congratulations! You've completed difficulty level 3!";
             }
         }
