@@ -444,12 +444,9 @@ Test No | Test Feature | Expected Result | Actual | Pass/Fail
  - The site was tested on Google Chrome, Edge, Safari and Mozilla Firefox
 
 ### Lighthouse
- - Testing using lighthouse took place in chrome with these results link
-After referring to the outcome and suggestions meta titles were added and these new improved results occurred link 
+ - Testing using lighthouse took place in chrome with these results
 
-[Lighthouse Test 1](assets/readme/lighthouse1.png)
-
-![Lighthouse Test 2](assets/readme/lighthouse2.png)
+[Lighthouse Test](assets/readme/lighthouse.png)
 
 
 ### Devices
@@ -460,11 +457,8 @@ After referring to the outcome and suggestions meta titles were added and these 
 
 ### Known Bugs
 
- - On some mobile devices text can appear slightly off centre to the left
-<br>
- - On Microsoft edge (intermittently) a thin white line appears between the footer and youtube embed 
+ - On some mobile devices grid can become off center depending on mobile screen size
   <br>
-- On safari on certain phones, hero image doesn't resize and it zoomed
 
 ## Deployment
 
@@ -521,64 +515,67 @@ Forking the Github repository makes a copy of the original repository on our Git
 
 ID | Filename.type | Description | Size | Location | Used
 ------------ | ------------- | ------------ | ------------ | ------------- | ------------
-1 | index.html | Homepage | 14KB | Root | -
-2 | biography.html | Biography Page | 15KB | Root | -
-3 | music.html | Music Page | 19KB | Root | -
-4 | contact.html | Contact Page | 12KB | Root | -
-5 | wavoalartwork.jpeg | artwork | 12KB | images | music.html
-6 | wamlicartwork.jpeg | artwork | 34KB | images | music.html
-7 | wamlicartwork.jpeg | artwork | 34KB | images | music.html
-8 | wabwartwork.jpeg | artwork | 303KB | images | index.html/music.html
-9 | wahero2.jpg | hero | 726KB | images | index.html
-10 | walogo.png | logo | 46KB | images | All
-11 | walive3.jpg | image | 364KB | images | biography.html
+1 | index.html | Homepage | 10KB | Root | -
+2 | contact.html | Contact Page | 12KB | Root | -
+3 | 1_card.png | logo | 4KB | images | Homepage
+4 | 2_card.png | logo | 4KB | images | Homepage
+5 | 3_card.png | logo | 4KB | images | Homepage
+6 | 4_card.png | logo | 4KB | images | Homepage
+7 | 5_card.png | logo | 4KB | images | Homepage
+8 | 6_card.png | logo | 4KB | images | Homepage
+9 | a_card.png | logo | 4KB | images | Homepage
+10 | b_card.png | logo | 4KB | images | Homepage
+11 | c_card.png | logo | 4KB | images | Homepage
+12 | d_card.png | logo | 4KB | images | Homepage
+13 | e_card.png | logo | 4KB | images | Homepage
+14 | f_card.png | logo | 4KB | images | Homepage
+15 | pink_card.png | logo | 4KB | images | Homepage
+16 | purple_card.png | logo | 4KB | images | Homepage
+17 | red_card.png | logo | 4KB | images | Homepage
+18 | green_card.png | logo | 4KB | images | Homepage
+19 | yellow_card.png | logo | 4KB | images | Homepage
+20 | blue_card.png | logo | 4KB | images | Homepage
+21 | star_card.png | logo | 4KB | images | Homepage
+22 | blank_card.png | logo | 4KB | images | Homepage
 
 ## Credits
 
 ### Code
 
-[Font Size Control](https://codepen.io/thecodercoder/pen/YzKgLYZ)
-
-[Bootstrap4 Used throughout](https://getbootstrap.com/)
-
-[Bootstrap navbar preset colour override](https://medium.com/wdstack/bootstrap-4-custom-navbar-1f6a2da5ed3c)
-
-[Youtube embed](https://www.w3schools.com/html/html_youtube.asp)
+[Bootstrap5 Used throughout](https://getbootstrap.com/)
 
 [Alt text for background images](https://www.davidmacd.com/blog/alternate-text-for-css-background-images.html)
 
-[How to use aria-labelledby](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute)
-
-
 [Img Center](https://stackoverflow.com/questions/10879955/how-to-align-an-image-dead-center-with-bootstrap)
-
-[iframe boarder css](https://www.tagindex.net/css/frame/border.html)
 
 [Correct form input fields](https://stackoverflow.com/questions/7497765/html5-valid-form-input-fields)
 
 [meta-data descriptions](https://yoast.com/meta-descriptions/)
 
-### Content 
+[jQuery each function information](https://www.sitepoint.com/jquery-each-function-examples/)
 
-[Visions of a Life info](https://en.wikipedia.org/wiki/Visions_of_a_Life)
+[jQuery attr function](https://www.w3schools.com/jquery/html_attr.asp)
 
-[Blue weekend info](https://en.wikipedia.org/wiki/Blue_Weekend)
+[jQuery information for various aspects of the library](api.jquery.com)
 
-[My Love Is Cool info](https://en.wikipedia.org/wiki/My_Love_Is_Cool)
+[Remove event listeners](https://www.youtube.com/watch?v=hO2b1hU9cfg)
 
-[Biography](https://www.rcarecords.com/artist/wolf-alice/)
+[.find](https://api.jquery.com/find/)
+
+
+[javascript timer](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript#toc-5-the-timer)
+
+[inspitation for check card function, heavily modified](https://youtube.com/watch?v=tjyDOHzKN0=tjyw)
+
+[emailJS](https://dashboard.emailjs.com)
 
 [Guidance on use of fonts and simplistic design](https://www.30degreesnorth.com/blog/5-website-font-mistakes-you-dont-want-to-make)
 
+
+### Content 
+No external content used
 ### Media
-
-[Hero images, logo, artwork (from press pack)](https://www.rcarecords.com/artist/wolf-alice/)
-
-
-[Live image of band 1](https://commons.wikimedia.org/wiki/File:Wolf_Alice_(26563855519).jpg)
-
-[Live image of band 2](https://www.flickr.com/photos/jeffkunz/45616040465/in/photolist-2cuW8Ai-2gNCWmq-292x9Fy-2jpKUr7-2cMGBfb-2cMGAPw-m1pU9Z-28DNKRo-2cuW7XK-m1qvUe-Ysfj2T-m1pV68-m1rpPC-Zpd7sN-2a2iu5g-2a2iwRi-Zpd7Vm-m1qwhi-CnjKWq-2a2ixzx-YsfjEr-Zpd6XQ-R4Sguj-CnjLZ7-2kfVA3g-5X9qN7-Ysfjsx-CnjL99-yNZt53-Zpd7hC-2ajhLnL-KEBQBu-Gtp6yX-29dT3yX-2kA44GS-bq8twV-YsfjD4-Zpd7Ly-yNZq7u-Ysfjhc-Fo4SvF-CnjLSo-Zpd6wQ-CnjLjQ-uWwJC6-2jovQxr-2gNCWjB-bGs3sF-oCNatx-CnjLvG)
-
+No external media used
 ## Ackhnowledgements
  - Patrick Justus 
  - Harlow College 
