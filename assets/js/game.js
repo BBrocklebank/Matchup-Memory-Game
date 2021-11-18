@@ -198,6 +198,8 @@ function difOne() {
             }
         ]
 
+        cardArray.sort(() => 0.5 - Math.random());
+
         // Clear Grid
         $('#grid').html("");
 
@@ -390,6 +392,8 @@ function difTwo() {
                 img: '../Matchup-Memory-Game/assets/images/yellow_card.png'
             },
         ]
+
+        cardArray.sort(() => 0.5 - Math.random());
 
         // Clear Grid
         $('#grid').html("");
@@ -628,6 +632,8 @@ function difThree() {
                 img: '../Matchup-Memory-Game/assets/images/f_card.png'
             },
         ]
+
+        cardArray.sort(() => 0.5 - Math.random());
 
         // Clear Grid
         $('#grid').html("");
