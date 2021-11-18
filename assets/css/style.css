@@ -1,3 +1,5 @@
+/* ..............Game................ */
+
 /* Score */
 .score {
     margin-bottom: 0;
@@ -20,6 +22,15 @@
     display: flex;
     flex-wrap: wrap;
     width: 924px;
+}
+
+/* Cards */
+img {
+    border-radius: 15px;
+}
+
+img.hover {
+    filter:invert(100%);
 }
 
 /* Start Menu */
@@ -55,4 +66,25 @@
     flex-wrap: nowrap;
     height: 80px;
     width: 100%;
+}
+
+/*....................Contact Form....................*/
+.center-form {
+    width: 75vw;
+}
+
+.form-name {
+margin: 10px 0px 10px 0px;
+}
+
+.form-email {
+    margin: 10px 0px 10px 0px;
+}
+
+.form-message {
+    margin: 10px 0px 10px 0px;
+}
+
+.contact-button {
+    margin: 0px 0px 10px 0px;
 }

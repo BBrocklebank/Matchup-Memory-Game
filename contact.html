@@ -66,6 +66,25 @@
         </nav>
     </header>
 
+    <main>
+        <section class="container-fluid ">
+            <div class="row bg-color-contact justify-content-center">
+                <div>
+                    <h3 class="contact-heading uppercase text-center">Feedback or questions?</h3>
+                    <h5 class="uppercase text-center">Get in touch!</h5>
+                </div>
+                <div class="center-form justify-content-center">
+                    <form onsubmit="return sendMail(this);">
+                        <input type="text" name="name" class="form-control form-name" id="fullname" placeholder="Name" required/>
+                        <input type="text" name="emailaddress" class="form-control from-email" id="emailaddress" placeholder="Email" required/>
+                        <textarea rows="5" name="message" class="form-control form-message" id="message" placeholder="Message" required></textarea>
+                        <button type="submit" class="btn btn-secondary center-block contact-button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
      <!-- Footer -->
      <footer class="footer">
         <span class="justify-content-center align-middle d-flex">

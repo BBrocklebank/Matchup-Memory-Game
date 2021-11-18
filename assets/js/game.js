@@ -219,7 +219,7 @@ function difOne() {
                 let card = document.createElement('img');
                 $(card).attr({
                     'src': '../Matchup-Memory-Game/assets/images/star_card.png',
-                    'data-id': i
+                    'data-id': i,
                 });
                 $(grid1).append(card);
             }
