@@ -161,51 +161,51 @@ function difOne() {
         // Cards Array
         let cardArray = [{
                 name: '1',
-                img: '../Matchup-Memory-Game/assets/images/1_card.png'
+                img: '../assets/images/1_card.png'
             },
             {
                 name: '1',
-                img: '../Matchup-Memory-Game/assets/images/1_card.png'
+                img: '../assets/images/1_card.png'
             },
             {
                 name: '2',
-                img: '../Matchup-Memory-Game/assets/images/2_card.png'
+                img: '../assets/images/2_card.png'
             },
             {
                 name: '2',
-                img: '../Matchup-Memory-Game/assets/images/2_card.png'
+                img: '../assets/images/2_card.png'
             },
             {
                 name: '3',
-                img: '../Matchup-Memory-Game/assets/images/3_card.png'
+                img: '../assets/images/3_card.png'
             },
             {
                 name: '3',
-                img: '../Matchup-Memory-Game/assets/images/3_card.png'
+                img: '../assets/images/3_card.png'
             },
             {
                 name: '4',
-                img: '../Matchup-Memory-Game/assets/images/4_card.png'
+                img: '../assets/images/4_card.png'
             },
             {
                 name: '4',
-                img: '../Matchup-Memory-Game/assets/images/4_card.png'
+                img: '../assets/images/4_card.png'
             },
             {
                 name: '5',
-                img: '../Matchup-Memory-Game/assets/images/5_card.png'
+                img: '../assets/images/5_card.png'
             },
             {
                 name: '5',
-                img: '../Matchup-Memory-Game/assets/images/5_card.png'
+                img: '../assets/images/5_card.png'
             },
             {
                 name: '6',
-                img: '../Matchup-Memory-Game/assets/images/6_card.png'
+                img: '../assets/images/6_card.png'
             },
             {
                 name: '6',
-                img: '../Matchup-Memory-Game/assets/images/6_card.png'
+                img: '../assets/images/6_card.png'
             }
         ];
 
@@ -227,7 +227,7 @@ function difOne() {
             for (let i = 0; i < cardArray.length; i++) {
                 let card = document.createElement('img');
                 $(card).attr({
-                    'src': '../Matchup-Memory-Game/assets/images/star_card.png',
+                    'src': '../assets/images/star_card.png',
                     'data-id': i,
                     'alt': 'cards to be matched'
                 });
@@ -264,8 +264,8 @@ function difOne() {
             let choiceOneId = selectedCardsId[0];
             let choiceTwoId = selectedCardsId[1];
             if ((selectedCards[0] === selectedCards[1]) && (selectedCardsId[0] !== selectedCardsId[1])) {
-                cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
-                cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
+                cards[choiceOneId].setAttribute('src', '../assets/images/blank_card.png');
+                cards[choiceTwoId].setAttribute('src', '../assets/images/blank_card.png');
                 scoreTrack1++;
                 $(cards[choiceOneId]).off('click', flipcard);
                 $(cards[choiceTwoId]).off('click', flipcard);
@@ -273,8 +273,8 @@ function difOne() {
                 alert('Correct match!');
             } else {
                 alert('Wrong match! Try again!');
-                cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
-                cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
+                cards[choiceOneId].setAttribute('src', '../assets/images/star_card.png');
+                cards[choiceTwoId].setAttribute('src', '../assets/images/star_card.png');
             }
 
             selectedCards = [];
@@ -310,99 +310,99 @@ function difTwo() {
         // Cards Array
         let cardArray = [{
                 name: '1',
-                img: '../Matchup-Memory-Game/assets/images/1_card.png'
+                img: '../assets/images/1_card.png'
             },
             {
                 name: '1',
-                img: '../Matchup-Memory-Game/assets/images/1_card.png'
+                img: '../assets/images/1_card.png'
             },
             {
                 name: '2',
-                img: '../Matchup-Memory-Game/assets/images/2_card.png'
+                img: '../assets/images/2_card.png'
             },
             {
                 name: '2',
-                img: '../Matchup-Memory-Game/assets/images/2_card.png'
+                img: '../assets/images/2_card.png'
             },
             {
                 name: '3',
-                img: '../Matchup-Memory-Game/assets/images/3_card.png'
+                img: '../assets/images/3_card.png'
             },
             {
                 name: '3',
-                img: '../Matchup-Memory-Game/assets/images/3_card.png'
+                img: '../assets/images/3_card.png'
             },
             {
                 name: '4',
-                img: '../Matchup-Memory-Game/assets/images/4_card.png'
+                img: '../assets/images/4_card.png'
             },
             {
                 name: '4',
-                img: '../Matchup-Memory-Game/assets/images/4_card.png'
+                img: '../assets/images/4_card.png'
             },
             {
                 name: '5',
-                img: '../Matchup-Memory-Game/assets/images/5_card.png'
+                img: '../assets/images/5_card.png'
             },
             {
                 name: '5',
-                img: '../Matchup-Memory-Game/assets/images/5_card.png'
+                img: '../assets/images/5_card.png'
             },
             {
                 name: '6',
-                img: '../Matchup-Memory-Game/assets/images/6_card.png'
+                img: '../assets/images/6_card.png'
             },
             {
                 name: '6',
-                img: '../Matchup-Memory-Game/assets/images/6_card.png'
+                img: '../assets/images/6_card.png'
             },
             {
                 name: 'blue',
-                img: '../Matchup-Memory-Game/assets/images/blue_card.png'
+                img: '../assets/images/blue_card.png'
             },
             {
                 name: 'blue',
-                img: '../Matchup-Memory-Game/assets/images/blue_card.png'
+                img: '../assets/images/blue_card.png'
             },
             {
                 name: 'green',
-                img: '../Matchup-Memory-Game/assets/images/green_card.png'
+                img: '../assets/images/green_card.png'
             },
             {
                 name: 'green',
-                img: '../Matchup-Memory-Game/assets/images/green_card.png'
+                img: '../assets/images/green_card.png'
             },
             {
                 name: 'pink',
-                img: '../Matchup-Memory-Game/assets/images/pink_card.png'
+                img: '../assets/images/pink_card.png'
             },
             {
                 name: 'pink',
-                img: '../Matchup-Memory-Game/assets/images/pink_card.png'
+                img: '../assets/images/pink_card.png'
             },
             {
                 name: 'purple',
-                img: '../Matchup-Memory-Game/assets/images/purple_card.png'
+                img: '../assets/images/purple_card.png'
             },
             {
                 name: 'purple',
-                img: '../Matchup-Memory-Game/assets/images/purple_card.png'
+                img: '../assets/images/purple_card.png'
             },
             {
                 name: 'red',
-                img: '../Matchup-Memory-Game/assets/images/red_card.png'
+                img: '../assets/images/red_card.png'
             },
             {
                 name: 'red',
-                img: '../Matchup-Memory-Game/assets/images/red_card.png'
+                img: '../assets/images/red_card.png'
             },
             {
                 name: 'yellow',
-                img: '../Matchup-Memory-Game/assets/images/yellow_card.png'
+                img: '../assets/images/yellow_card.png'
             },
             {
                 name: 'yellow',
-                img: '../Matchup-Memory-Game/assets/images/yellow_card.png'
+                img: '../assets/images/yellow_card.png'
             },
         ];
 
@@ -424,7 +424,7 @@ function difTwo() {
             for (let i = 0; i < cardArray.length; i++) {
                 let card = document.createElement('img');
                 $(card).attr({
-                    'src': '../Matchup-Memory-Game/assets/images/star_card.png',
+                    'src': '../assets/images/star_card.png',
                     'data-id': i,
                     'alt': 'cards to be matched'
                 });
@@ -461,16 +461,16 @@ function difTwo() {
             let choiceOneId = selectedCardsId[0];
             let choiceTwoId = selectedCardsId[1];
             if ((selectedCards[0] === selectedCards[1]) && (selectedCardsId[0] !== selectedCardsId[1])) {
-                cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
-                cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
+                cards[choiceOneId].setAttribute('src', '../assets/images/blank_card.png');
+                cards[choiceTwoId].setAttribute('src', '../assets/images/blank_card.png');
                 scoreTrack2++;
                 $(cards[choiceOneId]).off('click', flipcard);
                 $(cards[choiceTwoId]).off('click', flipcard);
                 scoreDisplay.textContent = ` ${scoreTrack2}/${cardArray.length/2}`;
                 alert('Correct match!');
             } else {
-                cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
-                cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
+                cards[choiceOneId].setAttribute('src', '../assets/images/star_card.png');
+                cards[choiceTwoId].setAttribute('src', '../assets/images/star_card.png');
                 alert('Wrong match! Try again!');
             }
             selectedCards = [];
@@ -504,147 +504,147 @@ function difThree() {
         // Cards Array
         let cardArray = [{
                 name: '1',
-                img: '../Matchup-Memory-Game/assets/images/1_card.png'
+                img: '../assets/images/1_card.png'
             },
             {
                 name: '1',
-                img: '../Matchup-Memory-Game/assets/images/1_card.png'
+                img: '../assets/images/1_card.png'
             },
             {
                 name: '2',
-                img: '../Matchup-Memory-Game/assets/images/2_card.png'
+                img: '../assets/images/2_card.png'
             },
             {
                 name: '2',
-                img: '../Matchup-Memory-Game/assets/images/2_card.png'
+                img: '../assets/images/2_card.png'
             },
             {
                 name: '3',
-                img: '../Matchup-Memory-Game/assets/images/3_card.png'
+                img: '../assets/images/3_card.png'
             },
             {
                 name: '3',
-                img: '../Matchup-Memory-Game/assets/images/3_card.png'
+                img: '../assets/images/3_card.png'
             },
             {
                 name: '4',
-                img: '../Matchup-Memory-Game/assets/images/4_card.png'
+                img: '../assets/images/4_card.png'
             },
             {
                 name: '4',
-                img: '../Matchup-Memory-Game/assets/images/4_card.png'
+                img: '../assets/images/4_card.png'
             },
             {
                 name: '5',
-                img: '../Matchup-Memory-Game/assets/images/5_card.png'
+                img: '../assets/images/5_card.png'
             },
             {
                 name: '5',
-                img: '../Matchup-Memory-Game/assets/images/5_card.png'
+                img: '../assets/images/5_card.png'
             },
             {
                 name: '6',
-                img: '../Matchup-Memory-Game/assets/images/6_card.png'
+                img: '../assets/images/6_card.png'
             },
             {
                 name: '6',
-                img: '../Matchup-Memory-Game/assets/images/6_card.png'
+                img: '../assets/images/6_card.png'
             },
             {
                 name: 'blue',
-                img: '../Matchup-Memory-Game/assets/images/blue_card.png'
+                img: '../assets/images/blue_card.png'
             },
             {
                 name: 'blue',
-                img: '../Matchup-Memory-Game/assets/images/blue_card.png'
+                img: '../assets/images/blue_card.png'
             },
             {
                 name: 'green',
-                img: '../Matchup-Memory-Game/assets/images/green_card.png'
+                img: '../assets/images/green_card.png'
             },
             {
                 name: 'green',
-                img: '../Matchup-Memory-Game/assets/images/green_card.png'
+                img: '../assets/images/green_card.png'
             },
             {
                 name: 'pink',
-                img: '../Matchup-Memory-Game/assets/images/pink_card.png'
+                img: '../assets/images/pink_card.png'
             },
             {
                 name: 'pink',
-                img: '../Matchup-Memory-Game/assets/images/pink_card.png'
+                img: '../assets/images/pink_card.png'
             },
             {
                 name: 'purple',
-                img: '../Matchup-Memory-Game/assets/images/purple_card.png'
+                img: '../assets/images/purple_card.png'
             },
             {
                 name: 'purple',
-                img: '../Matchup-Memory-Game/assets/images/purple_card.png'
+                img: '../assets/images/purple_card.png'
             },
             {
                 name: 'red',
-                img: '../Matchup-Memory-Game/assets/images/red_card.png'
+                img: '../assets/images/red_card.png'
             },
             {
                 name: 'red',
-                img: '../Matchup-Memory-Game/assets/images/red_card.png'
+                img: '../assets/images/red_card.png'
             },
             {
                 name: 'yellow',
-                img: '../Matchup-Memory-Game/assets/images/yellow_card.png'
+                img: '../assets/images/yellow_card.png'
             },
             {
                 name: 'yellow',
-                img: '../Matchup-Memory-Game/assets/images/yellow_card.png'
+                img: '../assets/images/yellow_card.png'
             },
             {
                 name: 'A',
-                img: '../Matchup-Memory-Game/assets/images/a_card.png'
+                img: '../assets/images/a_card.png'
             },
             {
                 name: 'A',
-                img: '../Matchup-Memory-Game/assets/images/a_card.png'
+                img: '../assets/images/a_card.png'
             },
             {
                 name: 'B',
-                img: '../Matchup-Memory-Game/assets/images/b_card.png'
+                img: '../assets/images/b_card.png'
             },
             {
                 name: 'B',
-                img: '../Matchup-Memory-Game/assets/images/b_card.png'
+                img: '../assets/images/b_card.png'
             },
             {
                 name: 'C',
-                img: '../Matchup-Memory-Game/assets/images/c_card.png'
+                img: '../assets/images/c_card.png'
             },
             {
                 name: 'C',
-                img: '../Matchup-Memory-Game/assets/images/c_card.png'
+                img: '../assets/images/c_card.png'
             },
             {
                 name: 'D',
-                img: '../Matchup-Memory-Game/assets/images/d_card.png'
+                img: '../assets/images/d_card.png'
             },
             {
                 name: 'D',
-                img: '../Matchup-Memory-Game/assets/images/d_card.png'
+                img: '../assets/images/d_card.png'
             },
             {
                 name: 'E',
-                img: '../Matchup-Memory-Game/assets/images/e_card.png'
+                img: '../assets/images/e_card.png'
             },
             {
                 name: 'E',
-                img: '../Matchup-Memory-Game/assets/images/e_card.png'
+                img: '../assets/images/e_card.png'
             },
             {
                 name: 'F',
-                img: '../Matchup-Memory-Game/assets/images/f_card.png'
+                img: '../assets/images/f_card.png'
             },
             {
                 name: 'F',
-                img: '../Matchup-Memory-Game/assets/images/f_card.png'
+                img: '../assets/images/f_card.png'
             },
         ];
 
@@ -666,7 +666,7 @@ function difThree() {
             for (let i = 0; i < cardArray.length; i++) {
                 let card = document.createElement('img');
                 $(card).attr({
-                    'src': '../Matchup-Memory-Game/assets/images/star_card.png',
+                    'src': '../assets/images/star_card.png',
                     'data-id': i,
                     'alt': 'cards to be matched'
                 });
@@ -703,16 +703,16 @@ function difThree() {
             let choiceOneId = selectedCardsId[0];
             let choiceTwoId = selectedCardsId[1];
             if ((selectedCards[0] === selectedCards[1]) && (selectedCardsId[0] !== selectedCardsId[1])) {
-                cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
-                cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/blank_card.png');
+                cards[choiceOneId].setAttribute('src', '../assets/images/blank_card.png');
+                cards[choiceTwoId].setAttribute('src', '../assets/images/blank_card.png');
                 scoreTrack3++;
                 $(cards[choiceOneId]).off('click', flipcard);
                 $(cards[choiceTwoId]).off('click', flipcard);
                 scoreDisplay.textContent = ` ${scoreTrack3}/${cardArray.length/2}`;
                 alert('Correct match!');
             } else {
-                cards[choiceOneId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
-                cards[choiceTwoId].setAttribute('src', '../Matchup-Memory-Game/assets/images/star_card.png');
+                cards[choiceOneId].setAttribute('src', '../assets/images/star_card.png');
+                cards[choiceTwoId].setAttribute('src', '../assets/images/star_card.png');
                 alert('Wrong match! Try again!');
             }
             selectedCards = [];
