@@ -161,51 +161,51 @@ function difOne() {
         // Cards Array
         let cardArray = [{
                 name: '1',
-                img: '../assets/images/1_card.png'
+                img: '/assets/images/1_card.png'
             },
             {
                 name: '1',
-                img: '../assets/images/1_card.png'
+                img: '/assets/images/1_card.png'
             },
             {
                 name: '2',
-                img: '../assets/images/2_card.png'
+                img: '/assets/images/2_card.png'
             },
             {
                 name: '2',
-                img: '../assets/images/2_card.png'
+                img: '/assets/images/2_card.png'
             },
             {
                 name: '3',
-                img: '../assets/images/3_card.png'
+                img: '/assets/images/3_card.png'
             },
             {
                 name: '3',
-                img: '../assets/images/3_card.png'
+                img: '/assets/images/3_card.png'
             },
             {
                 name: '4',
-                img: '../assets/images/4_card.png'
+                img: '/assets/images/4_card.png'
             },
             {
                 name: '4',
-                img: '../assets/images/4_card.png'
+                img: '/assets/images/4_card.png'
             },
             {
                 name: '5',
-                img: '../assets/images/5_card.png'
+                img: '/assets/images/5_card.png'
             },
             {
                 name: '5',
-                img: '../assets/images/5_card.png'
+                img: '/assets/images/5_card.png'
             },
             {
                 name: '6',
-                img: '../assets/images/6_card.png'
+                img: '/assets/images/6_card.png'
             },
             {
                 name: '6',
-                img: '../assets/images/6_card.png'
+                img: '/assets/images/6_card.png'
             }
         ];
 
@@ -227,7 +227,7 @@ function difOne() {
             for (let i = 0; i < cardArray.length; i++) {
                 let card = document.createElement('img');
                 $(card).attr({
-                    'src': '../assets/images/star_card.png',
+                    'src': '/assets/images/star_card.png',
                     'data-id': i,
                     'alt': 'cards to be matched'
                 });
@@ -264,8 +264,8 @@ function difOne() {
             let choiceOneId = selectedCardsId[0];
             let choiceTwoId = selectedCardsId[1];
             if ((selectedCards[0] === selectedCards[1]) && (selectedCardsId[0] !== selectedCardsId[1])) {
-                cards[choiceOneId].setAttribute('src', '../assets/images/blank_card.png');
-                cards[choiceTwoId].setAttribute('src', '../assets/images/blank_card.png');
+                cards[choiceOneId].setAttribute('src', '/assets/images/blank_card.png');
+                cards[choiceTwoId].setAttribute('src', '/assets/images/blank_card.png');
                 scoreTrack1++;
                 $(cards[choiceOneId]).off('click', flipcard);
                 $(cards[choiceTwoId]).off('click', flipcard);
@@ -273,8 +273,8 @@ function difOne() {
                 alert('Correct match!');
             } else {
                 alert('Wrong match! Try again!');
-                cards[choiceOneId].setAttribute('src', '../assets/images/star_card.png');
-                cards[choiceTwoId].setAttribute('src', '../assets/images/star_card.png');
+                cards[choiceOneId].setAttribute('src', '/assets/images/star_card.png');
+                cards[choiceTwoId].setAttribute('src', '/assets/images/star_card.png');
             }
 
             selectedCards = [];
