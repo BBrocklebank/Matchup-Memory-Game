@@ -161,51 +161,51 @@ function difOne() {
         // Cards Array
         let cardArray = [{
                 name: '1',
-                img: '/assets/images/1_card.png'
+                img: './assets/images/1_card.png'
             },
             {
                 name: '1',
-                img: '/assets/images/1_card.png'
+                img: './assets/images/1_card.png'
             },
             {
                 name: '2',
-                img: '/assets/images/2_card.png'
+                img: './assets/images/2_card.png'
             },
             {
                 name: '2',
-                img: '/assets/images/2_card.png'
+                img: './assets/images/2_card.png'
             },
             {
                 name: '3',
-                img: '/assets/images/3_card.png'
+                img: './assets/images/3_card.png'
             },
             {
                 name: '3',
-                img: '/assets/images/3_card.png'
+                img: './assets/images/3_card.png'
             },
             {
                 name: '4',
-                img: '/assets/images/4_card.png'
+                img: './assets/images/4_card.png'
             },
             {
                 name: '4',
-                img: '/assets/images/4_card.png'
+                img: './assets/images/4_card.png'
             },
             {
                 name: '5',
-                img: '/assets/images/5_card.png'
+                img: './assets/images/5_card.png'
             },
             {
                 name: '5',
-                img: '/assets/images/5_card.png'
+                img: './assets/images/5_card.png'
             },
             {
                 name: '6',
-                img: '/assets/images/6_card.png'
+                img: './assets/images/6_card.png'
             },
             {
                 name: '6',
-                img: '/assets/images/6_card.png'
+                img: './assets/images/6_card.png'
             }
         ];
 
@@ -227,7 +227,7 @@ function difOne() {
             for (let i = 0; i < cardArray.length; i++) {
                 let card = document.createElement('img');
                 $(card).attr({
-                    'src': '/assets/images/star_card.png',
+                    'src': './assets/images/star_card.png',
                     'data-id': i,
                     'alt': 'cards to be matched'
                 });
