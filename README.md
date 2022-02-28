@@ -2,20 +2,20 @@
 
 ## README
 <hr>
- 
+
 
 #### Project Goals/Target Audience
 <hr>
 Memory Match is a fun, lighthearted and non intensive brain training game. Designed to be interactive and provide feedback to the user where necessary, its purpose is to provide entertainment and light exercise of short term memory. The application will be minimal in its processing needs and thereby be playable on a range of processors and devices of varying specification.
 <br>  <br>
-The applications main goals rest in providing entertainment whilst testing/improving a users short term memory. This will be achieved by providing a number of hidden items that the user can select and temporarily reveal. They will then have to match these with corresponding items elsewhere on the page. This is in the hopes that repeat games will improve the users ability to recall items quickly and correctly. 
+The applications main goals rest in providing entertainment whilst testing/improving a users short term memory. This will be achieved by providing a number of hidden items that the user can select and temporarily reveal. They will then have to match these with corresponding items elsewhere on the page. This is in the hopes that repeat games will improve the users ability to recall items quickly and correctly.
 <br>   <br>
-Memory Match’s target audience is recommended at ages 5+, with no specific background, cultural distinction or qualifications being its intended user base. The basic nature of the game provides a high level of accessibility to an enormous range of adults and children, though there is a special consideration. Although not specifically designed for this purpose, Memory Match has the potential to provide important brain training for those suffering with any memory based or cognitive conditions. In unison with this is can also provide brain development assistance in children. 
+Memory Match’s target audience is recommended at ages 5+, with no specific background, cultural distinction or qualifications being its intended user base. The basic nature of the game provides a high level of accessibility to an enormous range of adults and children, though there is a special consideration. Although not specifically designed for this purpose, Memory Match has the potential to provide important brain training for those suffering with any memory based or cognitive conditions. In unison with this is can also provide brain development assistance in children.
 
 <br>
 <br>
 
-![Mockup of Matchup Memory Game](assets/readme/site_mockup.png) 
+![Mockup of Matchup Memory Game](assets/readme/site_mockup.png)
 
 ## User Experience
 
@@ -29,7 +29,7 @@ Memory Match’s target audience is recommended at ages 5+, with no specific bac
 <br>
 - Encouraging on loss
 <br>
-- Intuitive controls for children and less able 
+- Intuitive controls for children and less able
 <br>
 - Intriguing imagery for all players
   <br>
@@ -41,9 +41,9 @@ Memory Match’s target audience is recommended at ages 5+, with no specific bac
   <br>
 - Encouraging and not frustrating
   <br>
-- Provide developmental value to short term memory 
+- Provide developmental value to short term memory
   <br>
-- Enjoyable for child/individual 
+- Enjoyable for child/individual
   <br>
 - Deliver some educational content
 <br>
@@ -53,7 +53,7 @@ Memory Match’s target audience is recommended at ages 5+, with no specific bac
 
 - Simple to use
   <br>
-- Entertaining experience 
+- Entertaining experience
   <br>
 - Low stress usage
 <br>
@@ -61,18 +61,18 @@ Memory Match’s target audience is recommended at ages 5+, with no specific bac
   <br>
 - Enhance user short term memory
 <br>
-- High compatibility for user ease of access 
+- High compatibility for user ease of access
   <br>
   <br>
 
 
-### User Stories 
+### User Stories
 
 * First time User Goals
 
-  - As a first time user, I want to easily ascertain the main purpose of the application and its value to me. 
+  - As a first time user, I want to easily ascertain the main purpose of the application and its value to me.
   <br>
-  - As a first time user, I want to easily interact with the application and its controls, visibly receiving feedback. 
+  - As a first time user, I want to easily interact with the application and its controls, visibly receiving feedback.
   <br>
   - As a first time user, I wish to see exciting images and animations that draw me into the application further.
   <br>
@@ -83,7 +83,7 @@ Memory Match’s target audience is recommended at ages 5+, with no specific bac
   <br>
   - As a returning user I wish to beat my previous score/time.
   <br>
-  - As a returning user I wish to improve my short term memory performance. 
+  - As a returning user I wish to improve my short term memory performance.
   <br>
   - As a returning user I want to know if there are any more games I can access by the same developer.
   <br>
@@ -97,7 +97,7 @@ Memory Match’s target audience is recommended at ages 5+, with no specific bac
   <br>
  * User (child)
   <br>
-   - I wish the game to be aesthetically appealing and interesting, gaining my attention. 
+   - I wish the game to be aesthetically appealing and interesting, gaining my attention.
   <br>
    - Controls should be obvious and visibly displayed to me in some way.
   <br>
@@ -116,24 +116,24 @@ Memory Match’s target audience is recommended at ages 5+, with no specific bac
   <br>
   - As a developer, I wish users to improve their short term memory performance.
   <br>
-  - As a developer, I want returning users to provide feedback on improvements/features they      
+  - As a developer, I want returning users to provide feedback on improvements/features they
     wish to see.
   <br>
   - As a developer, I want returning users to signup for announcements and future projects.
   <br>
   <br>
 
-## Design 
+## Design
 
 ### Design Choices
 
-Beginning this stage by researching other available matching card games I began to make a list of desirable design aspects I wanted to be included. Top priorities were to make the design appealing to children and adults alike, to present an engaging colour scheme and objects to interact with. The use of shapes stood out as a fine way to draw the user in to select cards and see what’s hidden underneath. Alongside this the need to make the cards themselves visually appealing was evident in my own research, games I enjoyed most did this. 
+Beginning this stage by researching other available matching card games I began to make a list of desirable design aspects I wanted to be included. Top priorities were to make the design appealing to children and adults alike, to present an engaging colour scheme and objects to interact with. The use of shapes stood out as a fine way to draw the user in to select cards and see what’s hidden underneath. Alongside this the need to make the cards themselves visually appealing was evident in my own research, games I enjoyed most did this.
 
-Interactivity needed to be simple and precise, one should be able to understand the games and its controls instinctively. Simplicity was key here and thus clear, large buttons where used alongside clearly differentiated cards to select from. Basic instructions were also included but the design has been constructed as such that these shouldn’t always be necessary. 
+Interactivity needed to be simple and precise, one should be able to understand the games and its controls instinctively. Simplicity was key here and thus clear, large buttons where used alongside clearly differentiated cards to select from. Basic instructions were also included but the design has been constructed as such that these shouldn’t always be necessary.
 
 To fulfil the educational aspect of the user requirements I opted to include numbers, colours and letters as the matching criteria for the game. These provide a low level challenge with some language/numeracy development for children and potentially for the impaired. Together with the training of memory these should serve to provide some revision for those in need of it, it’s also provides a nice variation.
 
-Different difficulty levels allow the user to fine tune their experience and if so desired increase the challenge of the game to quite a high level. This variation makes the game more versatile for a large number of users and provides a reason to return. 
+Different difficulty levels allow the user to fine tune their experience and if so desired increase the challenge of the game to quite a high level. This variation makes the game more versatile for a large number of users and provides a reason to return.
 
 ### Wireframes
 
@@ -153,13 +153,13 @@ The following wireframes were constructed within Balsamiq(link this) during the 
 
 [Initial Sketch](assets/readme/initial_sketch.jpg)
 
-### Colours 
+### Colours
 
-Card colours used were carefully selected from a colour chart to include all major primary colours and then contrasting colours that suited visually. As seen colours assigned to cards with their names tally and there is continuation in the use of orange for numbers and aqua for letters. This is to prevent the visual aspect of the game becoming too busy or distracting. The colour continuity also provides an aid at the higher level difficulty with some visual memory assistance. 
+Card colours used were carefully selected from a colour chart to include all major primary colours and then contrasting colours that suited visually. As seen colours assigned to cards with their names tally and there is continuation in the use of orange for numbers and aqua for letters. This is to prevent the visual aspect of the game becoming too busy or distracting. The colour continuity also provides an aid at the higher level difficulty with some visual memory assistance.
 
-The background colour of pale pink was chosen to contrast with images, icons and text as well as reduce eyestrain by being pale and not being an overtly bight colour on a screen. This colour isn’t used anywhere within the game itself. 
+The background colour of pale pink was chosen to contrast with images, icons and text as well as reduce eyestrain by being pale and not being an overtly bight colour on a screen. This colour isn’t used anywhere within the game itself.
 
-Menu buttons were assigned colours based on the generic understanding that green begins things and red stops, yellow for selecting. This is a simple and reused concept found in everyday life through various means. 
+Menu buttons were assigned colours based on the generic understanding that green begins things and red stops, yellow for selecting. This is a simple and reused concept found in everyday life through various means.
 
 
 ### Fonts
@@ -168,37 +168,37 @@ For this project fonts were left as default as they were quite adequate to portr
 
 ### Cards/Placeholders
 
-The cards were designed using GIMP 2.10, a free design tool that allowed me to create pixel specific sized squares and colour/label as I pleased. This worked very well as it allowed me to make adjustments as I developed the project and try different styles easily. It was also possible to set the compression amount upon exporting the files, enabling them to be the right size for web use. 
+The cards were designed using GIMP 2.10, a free design tool that allowed me to create pixel specific sized squares and colour/label as I pleased. This worked very well as it allowed me to make adjustments as I developed the project and try different styles easily. It was also possible to set the compression amount upon exporting the files, enabling them to be the right size for web use.
 
 
 ### Styling
 
-The general site layout is simple with little navigation needed. Placing the instructions at the bottom of the page enables mobile users to discover them is needed, however they can begin the instant the pages loads. This design enables access to the game with little fuss, no need to scroll the screen (apart from higher difficulty levels, screen size dependant). All of this comes together in allowing the game to present itself in a relaxed and smooth fashion which is ideal for parents and children trying to get to grips with what the site does. 
+The general site layout is simple with little navigation needed. Placing the instructions at the bottom of the page enables mobile users to discover them is needed, however they can begin the instant the pages loads. This design enables access to the game with little fuss, no need to scroll the screen (apart from higher difficulty levels, screen size dependant). All of this comes together in allowing the game to present itself in a relaxed and smooth fashion which is ideal for parents and children trying to get to grips with what the site does.
 
 The contact form is clean and to the point, little styling makes it a simple affair to write the message required and submit. Likewise subscribing to the newsletter is swift and simple for the same reasons.
 
 
 ## Features
 
-### Existing Features 
+### Existing Features
 
 - feedback form
 <br>
 - Reset button
-<br> 
-- Start Button 
+<br>
+- Start Button
 <br>
 - fully responsive
 <br>
 - Timer
 <br>
-- Game itself 
+- Game itself
 <br>
-- Difficulty levels 
+- Difficulty levels
 <br>
-- feedback modal 
+- feedback modal
 <br>
-- colours, letters and numbers on cards for childrens reading 
+- colours, letters and numbers on cards for childrens reading
 <br>
 <br>
 
@@ -229,7 +229,7 @@ Enabling users to get all the latest updates and information straight to their i
 
 Simple footer providing a copyright statement for legal purposes.
 
-* Additional Features 
+* Additional Features
 
   - Site is fully responsive
 
@@ -238,54 +238,54 @@ Simple footer providing a copyright statement for legal purposes.
   - Inter-page links for navigation
 
   - Timer
- 
+
   -  Modal alerts during game
 
 
-## Js Game Code 
+## Js Game Code
 
-Significant bugs were detected during the process of developing this section of the project. During the making of this I kept a small journal noting all bugs that I encounterd and how I solved them. These correlate with the bug fixed committed during development. 
+Significant bugs were detected during the process of developing this section of the project. During the making of this I kept a small journal noting all bugs that I encounterd and how I solved them. These correlate with the bug fixed committed during development.
 
 ### Bugs List - Check commits for BUG-comparison images
 
-1. No href on signup dropdown link meant cursor didn’t change to pointed hand 
+1. No href on signup dropdown link meant cursor didn’t change to pointed hand
 
-2. Jquery image locations not accurate, switch to vanilla js 
+2. Jquery image locations not accurate, switch to vanilla js
 
 3. .each  jQuery no index number to use, changed to vanilla js loop to assign index to cards for identification
 
 4. jQuery event listener wouldn’t pass card variable data. Assigned to new variable and passed this
 
-5. Wrong array in if statement of check cards (using id array instead of name). As ids are different for each card, would never display correct match 
+5. Wrong array in if statement of check cards (using id array instead of name). As ids are different for each card, would never display correct match
 
-6. Matched cards would show again if clicked, removed event listeners before adding them with .click to stop this 
+6. Matched cards would show again if clicked, removed event listeners before adding them with .click to stop this
 
-8. Attempting to display matched cards score before cards have been added to matchedCards array, fix, relocate code to after event/required placeholder text as score displays code within function/if statement so no display beforehand 
+8. Attempting to display matched cards score before cards have been added to matchedCards array, fix, relocate code to after event/required placeholder text as score displays code within function/if statement so no display beforehand
 
-9. Grid select changed class of grid div, grid select ceased to function. Added id to grid div and added set class attribute for each difficulties grid select function. 
+9. Grid select changed class of grid div, grid select ceased to function. Added id to grid div and added set class attribute for each difficulties grid select function.
 
-10. Selecting difficulties would place all images elements into div along with last used, overwhelming page. Cleared grid html to prevent this. 
+10. Selecting difficulties would place all images elements into div along with last used, overwhelming page. Cleared grid html to prevent this.
 
 11. Cards could be flipped from moment of load, prevented this by only adding event listeners when start is clicked
 
-12. start button triggering every all dif functions, added key system to only trigger desired functions 
+12. start button triggering every all dif functions, added key system to only trigger desired functions
 
-13. selecting difficulty then wouldn’t let you select it. Fixed by wiping opposing control arrays within dif functions 
+13. selecting difficulty then wouldn’t let you select it. Fixed by wiping opposing control arrays within dif functions
 
 14. Added conditional statements to prevent start button triggering dif timer and event listeners unless that level was explicitly chosen
 
-15. Selecting same card would cause match alert, added conditional to check cardId isn’t the same 
+15. Selecting same card would cause match alert, added conditional to check cardId isn’t the same
 
-16. Mixing vanilla javascript and jQuery in same line of code to remove event listeners didn’t work 
+16. Mixing vanilla javascript and jQuery in same line of code to remove event listeners didn’t work
 
 17. dif one not being invoked on load, moved call to end of js file
 
-18. ## jQuery event click array causing multiple functions calls, cleared event listeners before adding in each dif function. This bug took considerable time to discover within debugger due to it's embedded nature within jQuery itself and not the code I had written on surface level. 
+18. ## jQuery event click array causing multiple functions calls, cleared event listeners before adding in each dif function. This bug took considerable time to discover within debugger due to it's embedded nature within jQuery itself and not the code I had written on surface level.
 
 
-## Js Email Code 
+## Js Email Code
 
-This section code didn't require many fixes, it was the quickest and smoothest part of development no doubt to the abundance of documentation available for EmailJS. As such no bugs were encountered. Some issues occured with naming finctions but these were trivial issues. 
+This section code didn't require many fixes, it was the quickest and smoothest part of development no doubt to the abundance of documentation available for EmailJS. As such no bugs were encountered. Some issues occured with naming finctions but these were trivial issues.
 
 
 ## Technologies Used
@@ -298,58 +298,58 @@ This section code didn't require many fixes, it was the quickest and smoothest p
 
 ## Frameworks, Libraries & Programs Used
 
-- VS code 
-  
+- VS code
+
     - Vs Code was used as the main editor for the project
   <br>
 - Bootstrap 5
-  
+
     - Bootstrap was used to assist in the layout, styling and responsiveness of the site
   <br>
 - Git
-  
+
     - Git was used for version control by utilising the Gitpod terminal to commit and push to Github
   <br>
-- Gitpod 
-  
+- Gitpod
+
     - This was used a secondary editor when away from the main workstation
   <br>
 - GitHub
     - Used to store the projects code after being pushed from git
   <br>
 - Github desktop
-  
+
     - Used to clone repositories from Github to local machine to work on
   <br>
 - Balsamiq
-  
+
     - Used to create wireframes and plan design of site
   <br>
 - Google Fonts
-  
+
     - Used to provide stylish and fitting fonts to the site
   <br>
 - jQuery
-  
-    - Provided with Bootstrap to enable certain responsive elements such as navbar 
+
+    - Provided with Bootstrap to enable certain responsive elements such as navbar
   <br>
 - Jsdelivr
-  
+
     - Provided with Bootstrap to enable certain responsive elements
   <br>
 - Popper.js
-  
+
     - Provided with Bootstrap to enable certain responsive elements
   <br>
 - GIMP
-  
+
     - Used to design and create img files specific to the project
 
 ## Testing
 
 ### Validator Testing
 
-The entire site has been validated using the W3C Markup, W3C CSS and JShint validators. 
+The entire site has been validated using the W3C Markup, W3C CSS and JShint validators.
 
 [Homepage HTML](assets/readme/homepage-val.png)
 
@@ -361,7 +361,7 @@ The entire site has been validated using the W3C Markup, W3C CSS and JShint vali
 
 [CSS](assets/readme/css-val.png)
 
-### Testing User Stories from User Experience (UX) Section 
+### Testing User Stories from User Experience (UX) Section
 
 ## User Stories
 
@@ -447,7 +447,7 @@ The entire site has been validated using the W3C Markup, W3C CSS and JShint vali
 
 - Repeated use of the game will inherently improve this without the users knowledge.
 
-- As a developer, I want returning users to provide feedback on improvements/features they  
+- As a developer, I want returning users to provide feedback on improvements/features they
  wish to see.
 
 - The clearly labelled contact page and signup modal both offer a way for the developer and user to interact with each other even if not directly. Signing up for the newsletter might lead to a contact submission if questions arise from an update.
@@ -462,21 +462,21 @@ The entire site has been validated using the W3C Markup, W3C CSS and JShint vali
 ### Black Box
 
 This testng relates to final stage testing where bugs have been removed. See design stage for bug reports and fixes.
-Images for each are numbered and provided bellow. 
+Images for each are numbered and provided bellow.
 
 Test No | Test Feature | Expected Result | Actual | Pass/Fail
 ------------ | ------------- | ------------ | ------------ | -------------
 1 | Launch Site | Site loads homepage | PASS | |
-2 | Check Navbar styling | Navbar styled correctly  | PASS | 
-3 | Homepage grid | cards in place | PASS | 
-4 | Font, size and style | Styled correctly | PASS | 
-5 | Start Button | Begins game operation/start timer | PASS | 
-6 | Cards | flip when selected | PASS | 
-7 | Cards | Match when correct, modal apears | PASS | 
-8 | Cards | Don't match when wrong, modal appears | PASS | 
-9 | Reset Button | Sets timer to zero and reloads grid | PASS | 
-10 | Dif Level One | Selects Grid One | PASS | 
-11 | Dif Level Two | Selects Grid Two | PASS | 
+2 | Check Navbar styling | Navbar styled correctly  | PASS |
+3 | Homepage grid | cards in place | PASS |
+4 | Font, size and style | Styled correctly | PASS |
+5 | Start Button | Begins game operation/start timer | PASS |
+6 | Cards | flip when selected | PASS |
+7 | Cards | Match when correct, modal apears | PASS |
+8 | Cards | Don't match when wrong, modal appears | PASS |
+9 | Reset Button | Sets timer to zero and reloads grid | PASS |
+10 | Dif Level One | Selects Grid One | PASS |
+11 | Dif Level Two | Selects Grid Two | PASS |
 12 | Dif Level Two | Selects Grid Three | PASS |
 13 | Contact Page | Loads correctly | PASS |
 14 | Contact Page | Successful form submission | PASS |
@@ -484,9 +484,9 @@ Test No | Test Feature | Expected Result | Actual | Pass/Fail
 16 | Homepage | Successful modal submission | PASS |
 17 | Homepage | Game end when time reaches 4min | PASS |
 18 | Hompage  | User wins when all cards matched | PASS |
-19 | All site navbar links | All links function as expected | PASS | 
-20 | Homepage | Modal lauches onto page | PASS | 
-21 | Contact page | Modal lauches onto page | PASS | 
+19 | All site navbar links | All links function as expected | PASS |
+20 | Homepage | Modal lauches onto page | PASS |
+21 | Contact page | Modal lauches onto page | PASS |
 
 ### Black Box Testing Images
 
@@ -529,7 +529,7 @@ Test No | Test Feature | Expected Result | Actual | Pass/Fail
 
 ### Devices
  - The site was tested on a variety of devices including a MacBook Pro, Dell Desktop, iPhone 11, iPad and Samsung Galaxy S20.
-  
+
 ### Friends/Family Users
  - Family members and friends took part in testing using the site and informed of any bugs encountered
 
@@ -553,7 +553,7 @@ At the top of the Repository, locate the "Settings" Button on the option menu
    <br>
 5. Click the link now displayed.
 
-### Forking the GitHub Repository 
+### Forking the GitHub Repository
 
 Forking the Github repository makes a copy of the original repository on our GitHub account. We can then view and/or make changes without affecting the original repository.
 
@@ -563,7 +563,7 @@ Forking the Github repository makes a copy of the original repository on our Git
    <br>
 3. You should now have a copy of the original repository in your GitHub account
 
-### Clone to desktop 
+### Clone to desktop
 
 1. Donwload Github Desktop
    <br>
@@ -579,9 +579,9 @@ Forking the Github repository makes a copy of the original repository on our Git
 
 ### Gitpod Clone
 
-1. Download the gitpod chrome extension 
+1. Download the gitpod chrome extension
    <br>
-2. Locate the repository on Github 
+2. Locate the repository on Github
    <br>
 3. On the righthand side of the menu bar choose "Gitpod"
    <br>
@@ -589,7 +589,7 @@ Forking the Github repository makes a copy of the original repository on our Git
    <br>
 5. You have now opened a new workspace within gitpod
    <br>
-6. The repository is clones to your Github 
+6. The repository is clones to your Github
 
 ID | Filename.type | Description | Size | Location | Used
 ------------ | ------------- | ------------ | ------------ | ------------- | ------------
@@ -650,11 +650,13 @@ ID | Filename.type | Description | Size | Location | Used
 [Guidance on use of fonts and simplistic design](https://www.30degreesnorth.com/blog/5-website-font-mistakes-you-dont-want-to-make)
 
 
-### Content 
+### Content
 No external content used
+
 ### Media
 No external media used
+
 ## Ackhnowledgements
- - Patrick Justus 
- - Harlow College 
- - Code Institute 
+ - Patrick Justus
+ - Harlow College
+ - Code Institute
